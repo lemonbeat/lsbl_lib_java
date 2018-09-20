@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -16,10 +16,10 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- *                 Definition of the commands of the topo_service.
- *             
+ *         Definition of the commands of the topo_service.
+ *       
  * 
- * <p>Java-Klasse f�r topo_cmd complex type.
+ * <p>Java-Klasse für topo_cmd complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
@@ -29,17 +29,23 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="gw_list_get" type="{urn:lsbl_topo_service}gw_list_get_request"/>
- *           &lt;element name="gw_description_get" type="{urn:lsbl_topo_service}gw_description_get_request"/>
- *           &lt;element name="gw_device_list_get" type="{urn:lsbl_topo_service}gw_device_list_get_request"/>
- *           &lt;element name="gw_description_publish" type="{urn:lsbl_topo_service}gw_description_publish_request"/>
- *           &lt;element name="device_description_get" type="{urn:lsbl_topo_service}device_description_get_request"/>
- *           &lt;element name="device_include" type="{urn:lsbl_topo_service}device_include_request"/>
- *           &lt;element name="device_find" type="{urn:lsbl_topo_service}device_find_request"/>
- *           &lt;element name="forward_to_service" type="{urn:lsbl_topo_service}forward_to_service"/>
- *           &lt;element name="device_autoinclude_set" type="{urn:lsbl_topo_service}device_autoinclude_set_request"/>
- *           &lt;element name="device_autoinclude_delete" type="{urn:lsbl_topo_service}device_autoinclude_delete_request"/>
- *           &lt;element name="device_factory_reset" type="{urn:lsbl_topo_service}device_factory_reset"/>
+ *           &lt;element name="forward_to_service" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}forward_to_service"/>
+ *           &lt;element name="gw_list_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_list_get_request"/>
+ *           &lt;element name="gw_description_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_description_get_request"/>
+ *           &lt;element name="gw_device_list_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_device_list_get_request"/>
+ *           &lt;element name="gw_network_key_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_network_key_get_request"/>
+ *           &lt;element name="gw_replacement_init" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_replacement_init_request"/>
+ *           &lt;element name="gw_replacement_execute" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_replacement_execute_request"/>
+ *           &lt;element name="gw_description_publish" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_description_publish_request"/>
+ *           &lt;element name="gw_remove" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_remove_request"/>
+ *           &lt;element name="device_description_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_description_get_request"/>
+ *           &lt;element name="device_include" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_include_request"/>
+ *           &lt;element name="device_find" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_find_request"/>
+ *           &lt;element name="device_autoinclude_set" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_autoinclude_set_request"/>
+ *           &lt;element name="device_autoinclude_delete" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_autoinclude_delete_request"/>
+ *           &lt;element name="device_factory_reset" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_factory_reset"/>
+ *           &lt;element name="device_remove" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_remove_request"/>
+ *           &lt;element name="device_replacement_init" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_replacement_init_request"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -51,42 +57,84 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "topo_cmd", propOrder = {
+    "forwardToService",
     "gwListGet",
     "gwDescriptionGet",
     "gwDeviceListGet",
+    "gwNetworkKeyGet",
+    "gwReplacementInit",
+    "gwReplacementExecute",
     "gwDescriptionPublish",
+    "gwRemove",
     "deviceDescriptionGet",
     "deviceInclude",
     "deviceFind",
-    "forwardToService",
     "deviceAutoincludeSet",
     "deviceAutoincludeDelete",
-    "deviceFactoryReset"
+    "deviceFactoryReset",
+    "deviceRemove",
+    "deviceReplacementInit"
 })
 public class TopoCmd {
 
+    @XmlElement(name = "forward_to_service")
+    protected ForwardToService forwardToService;
     @XmlElement(name = "gw_list_get")
     protected GwListGetRequest gwListGet;
     @XmlElement(name = "gw_description_get")
     protected GwDescriptionGetRequest gwDescriptionGet;
     @XmlElement(name = "gw_device_list_get")
     protected GwDeviceListGetRequest gwDeviceListGet;
+    @XmlElement(name = "gw_network_key_get")
+    protected GwNetworkKeyGetRequest gwNetworkKeyGet;
+    @XmlElement(name = "gw_replacement_init")
+    protected GwReplacementInitRequest gwReplacementInit;
+    @XmlElement(name = "gw_replacement_execute")
+    protected GwReplacementExecuteRequest gwReplacementExecute;
     @XmlElement(name = "gw_description_publish")
     protected GwDescriptionPublishRequest gwDescriptionPublish;
+    @XmlElement(name = "gw_remove")
+    protected GwRemoveRequest gwRemove;
     @XmlElement(name = "device_description_get")
     protected DeviceDescriptionGetRequest deviceDescriptionGet;
     @XmlElement(name = "device_include")
     protected DeviceIncludeRequest deviceInclude;
     @XmlElement(name = "device_find")
     protected DeviceFindRequest deviceFind;
-    @XmlElement(name = "forward_to_service")
-    protected ForwardToService forwardToService;
     @XmlElement(name = "device_autoinclude_set")
     protected DeviceAutoincludeSetRequest deviceAutoincludeSet;
     @XmlElement(name = "device_autoinclude_delete")
     protected DeviceAutoincludeDeleteRequest deviceAutoincludeDelete;
     @XmlElement(name = "device_factory_reset")
     protected DeviceFactoryReset deviceFactoryReset;
+    @XmlElement(name = "device_remove")
+    protected DeviceRemoveRequest deviceRemove;
+    @XmlElement(name = "device_replacement_init")
+    protected DeviceReplacementInitRequest deviceReplacementInit;
+
+    /**
+     * Ruft den Wert der forwardToService-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ForwardToService }
+     *     
+     */
+    public ForwardToService getForwardToService() {
+        return forwardToService;
+    }
+
+    /**
+     * Legt den Wert der forwardToService-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ForwardToService }
+     *     
+     */
+    public void setForwardToService(ForwardToService value) {
+        this.forwardToService = value;
+    }
 
     /**
      * Ruft den Wert der gwListGet-Eigenschaft ab.
@@ -161,6 +209,78 @@ public class TopoCmd {
     }
 
     /**
+     * Ruft den Wert der gwNetworkKeyGet-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link GwNetworkKeyGetRequest }
+     *     
+     */
+    public GwNetworkKeyGetRequest getGwNetworkKeyGet() {
+        return gwNetworkKeyGet;
+    }
+
+    /**
+     * Legt den Wert der gwNetworkKeyGet-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link GwNetworkKeyGetRequest }
+     *     
+     */
+    public void setGwNetworkKeyGet(GwNetworkKeyGetRequest value) {
+        this.gwNetworkKeyGet = value;
+    }
+
+    /**
+     * Ruft den Wert der gwReplacementInit-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link GwReplacementInitRequest }
+     *     
+     */
+    public GwReplacementInitRequest getGwReplacementInit() {
+        return gwReplacementInit;
+    }
+
+    /**
+     * Legt den Wert der gwReplacementInit-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link GwReplacementInitRequest }
+     *     
+     */
+    public void setGwReplacementInit(GwReplacementInitRequest value) {
+        this.gwReplacementInit = value;
+    }
+
+    /**
+     * Ruft den Wert der gwReplacementExecute-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link GwReplacementExecuteRequest }
+     *     
+     */
+    public GwReplacementExecuteRequest getGwReplacementExecute() {
+        return gwReplacementExecute;
+    }
+
+    /**
+     * Legt den Wert der gwReplacementExecute-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link GwReplacementExecuteRequest }
+     *     
+     */
+    public void setGwReplacementExecute(GwReplacementExecuteRequest value) {
+        this.gwReplacementExecute = value;
+    }
+
+    /**
      * Ruft den Wert der gwDescriptionPublish-Eigenschaft ab.
      * 
      * @return
@@ -182,6 +302,30 @@ public class TopoCmd {
      */
     public void setGwDescriptionPublish(GwDescriptionPublishRequest value) {
         this.gwDescriptionPublish = value;
+    }
+
+    /**
+     * Ruft den Wert der gwRemove-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link GwRemoveRequest }
+     *     
+     */
+    public GwRemoveRequest getGwRemove() {
+        return gwRemove;
+    }
+
+    /**
+     * Legt den Wert der gwRemove-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link GwRemoveRequest }
+     *     
+     */
+    public void setGwRemove(GwRemoveRequest value) {
+        this.gwRemove = value;
     }
 
     /**
@@ -257,30 +401,6 @@ public class TopoCmd {
     }
 
     /**
-     * Ruft den Wert der forwardToService-Eigenschaft ab.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ForwardToService }
-     *     
-     */
-    public ForwardToService getForwardToService() {
-        return forwardToService;
-    }
-
-    /**
-     * Legt den Wert der forwardToService-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ForwardToService }
-     *     
-     */
-    public void setForwardToService(ForwardToService value) {
-        this.forwardToService = value;
-    }
-
-    /**
      * Ruft den Wert der deviceAutoincludeSet-Eigenschaft ab.
      * 
      * @return
@@ -350,6 +470,54 @@ public class TopoCmd {
      */
     public void setDeviceFactoryReset(DeviceFactoryReset value) {
         this.deviceFactoryReset = value;
+    }
+
+    /**
+     * Ruft den Wert der deviceRemove-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DeviceRemoveRequest }
+     *     
+     */
+    public DeviceRemoveRequest getDeviceRemove() {
+        return deviceRemove;
+    }
+
+    /**
+     * Legt den Wert der deviceRemove-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DeviceRemoveRequest }
+     *     
+     */
+    public void setDeviceRemove(DeviceRemoveRequest value) {
+        this.deviceRemove = value;
+    }
+
+    /**
+     * Ruft den Wert der deviceReplacementInit-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DeviceReplacementInitRequest }
+     *     
+     */
+    public DeviceReplacementInitRequest getDeviceReplacementInit() {
+        return deviceReplacementInit;
+    }
+
+    /**
+     * Legt den Wert der deviceReplacementInit-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DeviceReplacementInitRequest }
+     *     
+     */
+    public void setDeviceReplacementInit(DeviceReplacementInitRequest value) {
+        this.deviceReplacementInit = value;
     }
 
 }

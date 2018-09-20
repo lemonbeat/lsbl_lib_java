@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *                 Definition of the commands of the GES Interface.
  *             
  * 
- * <p>Java-Klasse f�r ges_cmd complex type.
+ * <p>Java-Klasse für ges_cmd complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
@@ -29,8 +29,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="gw_broker_config_set" type="{urn:lsbl_ges}gw_broker_config_set_request"/>
- *           &lt;element name="gw_broker_config_delete" type="{urn:lsbl_ges}gw_broker_config_delete_request"/>
+ *           &lt;element name="gw_broker_config_set" type="{urn:com.lemonbeat.lsbl.lsbl_ges}gw_broker_config_set_request"/>
+ *           &lt;element name="gw_broker_config_delete" type="{urn:com.lemonbeat.lsbl.lsbl_ges}gw_broker_config_delete_request"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>

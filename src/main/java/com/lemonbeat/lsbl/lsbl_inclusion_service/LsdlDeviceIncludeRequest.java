@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *                 Request from the backend to the gateway. This request tells the gateway it is allowed to include the device with the given MAC.
  *             
  * 
- * <p>Java-Klasse f�r lsdl_device_include_request complex type.
+ * <p>Java-Klasse für lsdl_device_include_request complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
@@ -28,9 +28,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="mac" type="{urn:lsbl_common_base_types}mac"/>
- *         &lt;element name="modulus" type="{urn:lsbl_common_base_types}hex_string_128"/>
- *         &lt;element name="exponent" type="{urn:lsbl_common_base_types}hex_string_128"/>
+ *         &lt;element name="mac" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}mac"/>
+ *         &lt;element name="modulus" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}hex_string_128"/>
+ *         &lt;element name="exponent" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}hex_string_128"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

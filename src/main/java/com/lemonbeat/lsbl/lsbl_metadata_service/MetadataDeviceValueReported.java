@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *                 Event fired by the metadata service to inform about a value_report sent from a device to the gateway.
  *             
  * 
- * <p>Java-Klasse f�r metadata_device_value_reported complex type.
+ * <p>Java-Klasse für metadata_device_value_reported complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
@@ -28,10 +28,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="uuid" type="{urn:lsbl_common_base_types}uuid"/>
- *         &lt;element name="sgtin_device" type="{urn:lsbl_common_base_types}sgtin_96"/>
- *         &lt;element name="sgtin_gw" type="{urn:lsbl_common_base_types}sgtin_96"/>
- *         &lt;element name="lsdl" type="{urn:lsbl_common_base_types}lsdl"/>
+ *         &lt;element name="uuid" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}uuid"/>
+ *         &lt;element name="device_sgtin" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}sgtin_96"/>
+ *         &lt;element name="gw_sgtin" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}sgtin_96"/>
+ *         &lt;element name="lsdl" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}lsdl"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -43,18 +43,18 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "metadata_device_value_reported", propOrder = {
     "uuid",
-    "sgtinDevice",
-    "sgtinGw",
+    "deviceSgtin",
+    "gwSgtin",
     "lsdl"
 })
 public class MetadataDeviceValueReported {
 
     @XmlElement(required = true)
     protected String uuid;
-    @XmlElement(name = "sgtin_device", required = true)
-    protected String sgtinDevice;
-    @XmlElement(name = "sgtin_gw", required = true)
-    protected String sgtinGw;
+    @XmlElement(name = "device_sgtin", required = true)
+    protected String deviceSgtin;
+    @XmlElement(name = "gw_sgtin", required = true)
+    protected String gwSgtin;
     @XmlElement(required = true)
     protected String lsdl;
 
@@ -83,51 +83,51 @@ public class MetadataDeviceValueReported {
     }
 
     /**
-     * Ruft den Wert der sgtinDevice-Eigenschaft ab.
+     * Ruft den Wert der deviceSgtin-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getSgtinDevice() {
-        return sgtinDevice;
+    public String getDeviceSgtin() {
+        return deviceSgtin;
     }
 
     /**
-     * Legt den Wert der sgtinDevice-Eigenschaft fest.
+     * Legt den Wert der deviceSgtin-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setSgtinDevice(String value) {
-        this.sgtinDevice = value;
+    public void setDeviceSgtin(String value) {
+        this.deviceSgtin = value;
     }
 
     /**
-     * Ruft den Wert der sgtinGw-Eigenschaft ab.
+     * Ruft den Wert der gwSgtin-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getSgtinGw() {
-        return sgtinGw;
+    public String getGwSgtin() {
+        return gwSgtin;
     }
 
     /**
-     * Legt den Wert der sgtinGw-Eigenschaft fest.
+     * Legt den Wert der gwSgtin-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setSgtinGw(String value) {
-        this.sgtinGw = value;
+    public void setGwSgtin(String value) {
+        this.gwSgtin = value;
     }
 
     /**

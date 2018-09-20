@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -17,10 +17,10 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- *                 List of gateways that are or were able to communicate with this device
- *             
+ *         List of gateways that are or were able to communicate with this device
+ *       
  * 
- * <p>Java-Klasse f�r gateway_list complex type.
+ * <p>Java-Klasse für gateway_list complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="gw" type="{urn:lsbl_common_base_types}sgtin_96" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="gw" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}sgtin_96" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

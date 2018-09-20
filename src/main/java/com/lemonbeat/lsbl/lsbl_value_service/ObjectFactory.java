@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the lsbl_value_service package. 
+ * generated in the com.lemonbeat.lsbl.lsbl_value_service package.
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -30,26 +30,10 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: lsbl_value_service
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.lemonbeat.lsbl.lsbl_value_service
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link ValueGetLastRequest }
-     * 
-     */
-    public ValueGetLastRequest createValueGetLastRequest() {
-        return new ValueGetLastRequest();
-    }
-
-    /**
-     * Create an instance of {@link ValueSetRequest }
-     * 
-     */
-    public ValueSetRequest createValueSetRequest() {
-        return new ValueSetRequest();
     }
 
     /**
@@ -58,14 +42,6 @@ public class ObjectFactory {
      */
     public ValueResponse createValueResponse() {
         return new ValueResponse();
-    }
-
-    /**
-     * Create an instance of {@link ValueEvent }
-     * 
-     */
-    public ValueEvent createValueEvent() {
-        return new ValueEvent();
     }
 
     /**
@@ -93,19 +69,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ValueSetResponse }
+     * Create an instance of {@link ValueDescriptionGetRequest }
      * 
      */
-    public ValueSetResponse createValueSetResponse() {
-        return new ValueSetResponse();
-    }
-
-    /**
-     * Create an instance of {@link ValueGetResponse }
-     * 
-     */
-    public ValueGetResponse createValueGetResponse() {
-        return new ValueGetResponse();
+    public ValueDescriptionGetRequest createValueDescriptionGetRequest() {
+        return new ValueDescriptionGetRequest();
     }
 
     /**
@@ -122,6 +90,54 @@ public class ObjectFactory {
      */
     public DeviceValueReported createDeviceValueReported() {
         return new DeviceValueReported();
+    }
+
+    /**
+     * Create an instance of {@link ValueGetLastRequest }
+     * 
+     */
+    public ValueGetLastRequest createValueGetLastRequest() {
+        return new ValueGetLastRequest();
+    }
+
+    /**
+     * Create an instance of {@link ValueSetRequest }
+     * 
+     */
+    public ValueSetRequest createValueSetRequest() {
+        return new ValueSetRequest();
+    }
+
+    /**
+     * Create an instance of {@link ValueEvent }
+     * 
+     */
+    public ValueEvent createValueEvent() {
+        return new ValueEvent();
+    }
+
+    /**
+     * Create an instance of {@link ValueDescriptionGetResponse }
+     * 
+     */
+    public ValueDescriptionGetResponse createValueDescriptionGetResponse() {
+        return new ValueDescriptionGetResponse();
+    }
+
+    /**
+     * Create an instance of {@link ValueSetResponse }
+     * 
+     */
+    public ValueSetResponse createValueSetResponse() {
+        return new ValueSetResponse();
+    }
+
+    /**
+     * Create an instance of {@link ValueGetResponse }
+     * 
+     */
+    public ValueGetResponse createValueGetResponse() {
+        return new ValueGetResponse();
     }
 
 }

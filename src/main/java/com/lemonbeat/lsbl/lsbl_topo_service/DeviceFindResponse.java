@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -17,10 +17,10 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- *                 Response for the request device_find responses with the topology informations known by the backend.
- *             
+ *         Response for the request device_find responses with the topology informations known by the backend.
+ *       
  * 
- * <p>Java-Klasse f�r device_find_response complex type.
+ * <p>Java-Klasse für device_find_response complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
@@ -29,12 +29,12 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="sgtin" type="{urn:lsbl_common_base_types}sgtin_96"/>
- *         &lt;element name="mac" type="{urn:lsbl_common_base_types}mac"/>
+ *         &lt;element name="device_sgtin" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}sgtin_96"/>
+ *         &lt;element name="device_mac" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}mac"/>
  *         &lt;element name="radio_mode" type="{http://www.w3.org/2001/XMLSchema}unsignedInt"/>
  *         &lt;element name="included" type="{http://www.w3.org/2001/XMLSchema}unsignedInt"/>
- *         &lt;element name="lsdl" type="{urn:lsbl_common_base_types}lsdl"/>
- *         &lt;element name="gateways" type="{urn:lsbl_topo_service}gateway_list"/>
+ *         &lt;element name="lsdl" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}lsdl"/>
+ *         &lt;element name="gateways" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gateway_list"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -45,8 +45,8 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "device_find_response", propOrder = {
-    "sgtin",
-    "mac",
+    "deviceSgtin",
+    "deviceMac",
     "radioMode",
     "included",
     "lsdl",
@@ -54,10 +54,10 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class DeviceFindResponse {
 
-    @XmlElement(required = true)
-    protected String sgtin;
-    @XmlElement(required = true)
-    protected String mac;
+    @XmlElement(name = "device_sgtin", required = true)
+    protected String deviceSgtin;
+    @XmlElement(name = "device_mac", required = true)
+    protected String deviceMac;
     @XmlElement(name = "radio_mode")
     @XmlSchemaType(name = "unsignedInt")
     protected long radioMode;
@@ -69,51 +69,51 @@ public class DeviceFindResponse {
     protected GatewayList gateways;
 
     /**
-     * Ruft den Wert der sgtin-Eigenschaft ab.
+     * Ruft den Wert der deviceSgtin-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getSgtin() {
-        return sgtin;
+    public String getDeviceSgtin() {
+        return deviceSgtin;
     }
 
     /**
-     * Legt den Wert der sgtin-Eigenschaft fest.
+     * Legt den Wert der deviceSgtin-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setSgtin(String value) {
-        this.sgtin = value;
+    public void setDeviceSgtin(String value) {
+        this.deviceSgtin = value;
     }
 
     /**
-     * Ruft den Wert der mac-Eigenschaft ab.
+     * Ruft den Wert der deviceMac-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getMac() {
-        return mac;
+    public String getDeviceMac() {
+        return deviceMac;
     }
 
     /**
-     * Legt den Wert der mac-Eigenschaft fest.
+     * Legt den Wert der deviceMac-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setMac(String value) {
-        this.mac = value;
+    public void setDeviceMac(String value) {
+        this.deviceMac = value;
     }
 
     /**
