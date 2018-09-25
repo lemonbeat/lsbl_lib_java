@@ -30,6 +30,11 @@ Lsbl lsbl = LsBL.parse(lsblXML)
 ```bash
 cd lsbl_lib
 git clone git@gitlab.lemonbeat.com:sw/mgmt/common/lsbl_xsd.git
+
+# On windows
 xjc.exe -d src\main\java lsbl_xsd\xsd\lsbl.xsd
+# On linux
+xjc -d src/main/java lsbl_xsd/xsd/lsbl.xsd
+
 Move all generated classes to com.lemonbeat.lsbl package using IntelliJ
 ```

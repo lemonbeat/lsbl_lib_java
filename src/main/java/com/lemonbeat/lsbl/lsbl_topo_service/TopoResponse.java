@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -16,10 +16,10 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- *                 Definition of the responses of the topo_service.
- *             
+ *         Definition of the responses of the topo_service.
+ *       
  * 
- * <p>Java-Klasse f�r topo_response complex type.
+ * <p>Java-Klasse für topo_response complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
@@ -29,12 +29,13 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="gw_list_get" type="{urn:lsbl_topo_service}gw_list_get_response"/>
- *           &lt;element name="gw_description_get" type="{urn:lsbl_topo_service}gateway_description"/>
- *           &lt;element name="gw_device_list_get" type="{urn:lsbl_topo_service}gw_device_list_get_response"/>
- *           &lt;element name="device_description_get" type="{urn:lsbl_topo_service}device_description_get_response"/>
- *           &lt;element name="device_find" type="{urn:lsbl_topo_service}device_find_response"/>
- *           &lt;element name="device_description_report" type="{urn:lsbl_topo_service}device_description_get_response"/>
+ *           &lt;element name="gw_list_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_list_get_response"/>
+ *           &lt;element name="gw_description_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gateway_description"/>
+ *           &lt;element name="gw_device_list_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_device_list_get_response"/>
+ *           &lt;element name="gw_network_key_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_network_key_get_response"/>
+ *           &lt;element name="device_description_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_description_get_response"/>
+ *           &lt;element name="device_find" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_find_response"/>
+ *           &lt;element name="device_description_report" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_description_get_response"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -49,6 +50,7 @@ import javax.xml.bind.annotation.XmlType;
     "gwListGet",
     "gwDescriptionGet",
     "gwDeviceListGet",
+    "gwNetworkKeyGet",
     "deviceDescriptionGet",
     "deviceFind",
     "deviceDescriptionReport"
@@ -61,6 +63,8 @@ public class TopoResponse {
     protected GatewayDescription gwDescriptionGet;
     @XmlElement(name = "gw_device_list_get")
     protected GwDeviceListGetResponse gwDeviceListGet;
+    @XmlElement(name = "gw_network_key_get")
+    protected GwNetworkKeyGetResponse gwNetworkKeyGet;
     @XmlElement(name = "device_description_get")
     protected DeviceDescriptionGetResponse deviceDescriptionGet;
     @XmlElement(name = "device_find")
@@ -138,6 +142,30 @@ public class TopoResponse {
      */
     public void setGwDeviceListGet(GwDeviceListGetResponse value) {
         this.gwDeviceListGet = value;
+    }
+
+    /**
+     * Ruft den Wert der gwNetworkKeyGet-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link GwNetworkKeyGetResponse }
+     *     
+     */
+    public GwNetworkKeyGetResponse getGwNetworkKeyGet() {
+        return gwNetworkKeyGet;
+    }
+
+    /**
+     * Legt den Wert der gwNetworkKeyGet-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link GwNetworkKeyGetResponse }
+     *     
+     */
+    public void setGwNetworkKeyGet(GwNetworkKeyGetResponse value) {
+        this.gwNetworkKeyGet = value;
     }
 
     /**

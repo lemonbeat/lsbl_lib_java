@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.lemonbeat'
-version '20180608'
+version '20180920'
 
 sourceCompatibility = 1.8
 

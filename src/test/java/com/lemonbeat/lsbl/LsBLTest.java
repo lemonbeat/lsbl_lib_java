@@ -25,7 +25,7 @@ public class LsBLTest {
         Lsbl.Cmd cmd = factory.createLsblCmd();
         TopoCmd topoCmd = new TopoCmd();
         DeviceDescriptionGetRequest deviceDescriptionGetRequest = new DeviceDescriptionGetRequest();
-        deviceDescriptionGetRequest.setSgtin("SGTIN");
+        deviceDescriptionGetRequest.setDeviceSgtin("SGTIN");
         topoCmd.setDeviceDescriptionGet(deviceDescriptionGetRequest);
         cmd.setTopoCmd(topoCmd);
         lsbl.setCmd(cmd);

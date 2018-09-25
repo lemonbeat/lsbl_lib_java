@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -16,26 +16,31 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-
 import com.lemonbeat.lsbl.lsbl_common.CommonCmd;
 import com.lemonbeat.lsbl.lsbl_common.CommonResponse;
 import com.lemonbeat.lsbl.lsbl_config_mgmt_service.ConfigMgmtCmd;
 import com.lemonbeat.lsbl.lsbl_config_mgmt_service.ConfigMgmtEvent;
 import com.lemonbeat.lsbl.lsbl_config_mgmt_service.ConfigMgmtResponse;
-import com.lemonbeat.lsbl.lsbl_file_service.FileCmd;
-import com.lemonbeat.lsbl.lsbl_file_service.FileEvent;
-import com.lemonbeat.lsbl.lsbl_file_service.FileResponse;
+import com.lemonbeat.lsbl.lsbl_firmware_service.FirmwareCmd;
+import com.lemonbeat.lsbl.lsbl_firmware_service.FirmwareEvent;
+import com.lemonbeat.lsbl.lsbl_firmware_service.FirmwareResponse;
 import com.lemonbeat.lsbl.lsbl_ges.GesCmd;
 import com.lemonbeat.lsbl.lsbl_ges.GesResponse;
 import com.lemonbeat.lsbl.lsbl_global_key_service.GlobalKeyCmd;
 import com.lemonbeat.lsbl.lsbl_global_key_service.GlobalKeyEvent;
 import com.lemonbeat.lsbl.lsbl_global_key_service.GlobalKeyResponse;
+import com.lemonbeat.lsbl.lsbl_heartbeat_service.HeartbeatCmd;
+import com.lemonbeat.lsbl.lsbl_heartbeat_service.HeartbeatEvent;
+import com.lemonbeat.lsbl.lsbl_heartbeat_service.HeartbeatResponse;
 import com.lemonbeat.lsbl.lsbl_inclusion_service.InclusionCmd;
 import com.lemonbeat.lsbl.lsbl_inclusion_service.InclusionEvent;
 import com.lemonbeat.lsbl.lsbl_inclusion_service.InclusionResponse;
 import com.lemonbeat.lsbl.lsbl_metadata_service.MetadataCmd;
 import com.lemonbeat.lsbl.lsbl_metadata_service.MetadataEvent;
 import com.lemonbeat.lsbl.lsbl_metadata_service.MetadataResponse;
+import com.lemonbeat.lsbl.lsbl_status_service.StatusCmd;
+import com.lemonbeat.lsbl.lsbl_status_service.StatusEvent;
+import com.lemonbeat.lsbl.lsbl_status_service.StatusResponse;
 import com.lemonbeat.lsbl.lsbl_sys_event.SysEvent;
 import com.lemonbeat.lsbl.lsbl_test.TestCmd;
 import com.lemonbeat.lsbl.lsbl_test.TestResponse;
@@ -50,7 +55,7 @@ import com.lemonbeat.lsbl.lsbl_value_service.ValueResponse;
 
 
 /**
- * <p>Java-Klasse f�r anonymous complex type.
+ * <p>Java-Klasse für anonymous complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
@@ -78,17 +83,19 @@ import com.lemonbeat.lsbl.lsbl_value_service.ValueResponse;
  *               &lt;complexContent>
  *                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                   &lt;choice>
- *                     &lt;element name="common_cmd" type="{urn:lsbl_common}common_cmd"/>
- *                     &lt;element name="config_mgmt_cmd" type="{urn:lsbl_config_mgmt_service}config_mgmt_cmd"/>
- *                     &lt;element name="file_cmd" type="{urn:lsbl_file_service}file_cmd"/>
- *                     &lt;element name="global_key_cmd" type="{urn:lsbl_global_key_service}global_key_cmd"/>
- *                     &lt;element name="ges_cmd" type="{urn:lsbl_ges}ges_cmd"/>
- *                     &lt;element name="inclusion_cmd" type="{urn:lsbl_inclusion_service}inclusion_cmd"/>
- *                     &lt;element name="metadata_cmd" type="{urn:lsbl_metadata_service}metadata_cmd"/>
- *                     &lt;element name="topo_cmd" type="{urn:lsbl_topo_service}topo_cmd"/>
- *                     &lt;element name="test_cmd" type="{urn:lsbl_test}test_cmd"/>
- *                     &lt;element name="user_cmd" type="{urn:lsbl_user_service}user_cmd"/>
- *                     &lt;element name="value_cmd" type="{urn:lsbl_value_service}value_cmd"/>
+ *                     &lt;element name="common_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_common}common_cmd"/>
+ *                     &lt;element name="config_mgmt_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_config_mgmt_service}config_mgmt_cmd"/>
+ *                     &lt;element name="global_key_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_global_key_service}global_key_cmd"/>
+ *                     &lt;element name="heartbeat_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_heartbeat_service}heartbeat_cmd"/>
+ *                     &lt;element name="ges_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_ges}ges_cmd"/>
+ *                     &lt;element name="inclusion_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_inclusion_service}inclusion_cmd"/>
+ *                     &lt;element name="metadata_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_metadata_service}metadata_cmd"/>
+ *                     &lt;element name="status_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_status_service}status_cmd"/>
+ *                     &lt;element name="topo_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}topo_cmd"/>
+ *                     &lt;element name="test_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_test}test_cmd"/>
+ *                     &lt;element name="user_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_cmd"/>
+ *                     &lt;element name="value_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_value_service}value_cmd"/>
+ *                     &lt;element name="firmware_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_firmware_service}firmware_cmd"/>
  *                   &lt;/choice>
  *                 &lt;/restriction>
  *               &lt;/complexContent>
@@ -99,17 +106,19 @@ import com.lemonbeat.lsbl.lsbl_value_service.ValueResponse;
  *               &lt;complexContent>
  *                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                   &lt;choice>
- *                     &lt;element name="common_response" type="{urn:lsbl_common}common_response"/>
- *                     &lt;element name="config_mgmt_response" type="{urn:lsbl_config_mgmt_service}config_mgmt_response"/>
- *                     &lt;element name="topo_response" type="{urn:lsbl_topo_service}topo_response"/>
- *                     &lt;element name="user_response" type="{urn:lsbl_user_service}user_response"/>
- *                     &lt;element name="metadata_response" type="{urn:lsbl_metadata_service}metadata_response"/>
- *                     &lt;element name="inclusion_response" type="{urn:lsbl_inclusion_service}inclusion_response"/>
- *                     &lt;element name="global_key_response" type="{urn:lsbl_global_key_service}global_key_response"/>
- *                     &lt;element name="file_response" type="{urn:lsbl_file_service}file_response"/>
- *                     &lt;element name="value_response" type="{urn:lsbl_value_service}value_response"/>
- *                     &lt;element name="ges_response" type="{urn:lsbl_ges}ges_response"/>
- *                     &lt;element name="test_response" type="{urn:lsbl_test}test_response"/>
+ *                     &lt;element name="common_response" type="{urn:com.lemonbeat.lsbl.lsbl_common}common_response"/>
+ *                     &lt;element name="config_mgmt_response" type="{urn:com.lemonbeat.lsbl.lsbl_config_mgmt_service}config_mgmt_response"/>
+ *                     &lt;element name="topo_response" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}topo_response"/>
+ *                     &lt;element name="user_response" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_response"/>
+ *                     &lt;element name="metadata_response" type="{urn:com.lemonbeat.lsbl.lsbl_metadata_service}metadata_response"/>
+ *                     &lt;element name="status_response" type="{urn:com.lemonbeat.lsbl.lsbl_status_service}status_response"/>
+ *                     &lt;element name="inclusion_response" type="{urn:com.lemonbeat.lsbl.lsbl_inclusion_service}inclusion_response"/>
+ *                     &lt;element name="global_key_response" type="{urn:com.lemonbeat.lsbl.lsbl_global_key_service}global_key_response"/>
+ *                     &lt;element name="heartbeat_response" type="{urn:com.lemonbeat.lsbl.lsbl_heartbeat_service}heartbeat_response"/>
+ *                     &lt;element name="value_response" type="{urn:com.lemonbeat.lsbl.lsbl_value_service}value_response"/>
+ *                     &lt;element name="ges_response" type="{urn:com.lemonbeat.lsbl.lsbl_ges}ges_response"/>
+ *                     &lt;element name="test_response" type="{urn:com.lemonbeat.lsbl.lsbl_test}test_response"/>
+ *                     &lt;element name="firmware_response" type="{urn:com.lemonbeat.lsbl.lsbl_firmware_service}firmware_response"/>
  *                   &lt;/choice>
  *                 &lt;/restriction>
  *               &lt;/complexContent>
@@ -120,14 +129,16 @@ import com.lemonbeat.lsbl.lsbl_value_service.ValueResponse;
  *               &lt;complexContent>
  *                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                   &lt;choice>
- *                     &lt;element name="topo_event" type="{urn:lsbl_topo_service}topo_event"/>
- *                     &lt;element name="config_mgmt_event" type="{urn:lsbl_config_mgmt_service}config_mgmt_event"/>
- *                     &lt;element name="global_key_event" type="{urn:lsbl_global_key_service}global_key_event"/>
- *                     &lt;element name="file_event" type="{urn:lsbl_file_service}file_event"/>
- *                     &lt;element name="metadata_event" type="{urn:lsbl_metadata_service}metadata_event"/>
- *                     &lt;element name="value_event" type="{urn:lsbl_value_service}value_event"/>
- *                     &lt;element name="inclusion_event" type="{urn:lsbl_inclusion_service}inclusion_event"/>
- *                     &lt;element name="sys_event" type="{urn:lsbl_sys_event}sys_event"/>
+ *                     &lt;element name="topo_event" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}topo_event"/>
+ *                     &lt;element name="config_mgmt_event" type="{urn:com.lemonbeat.lsbl.lsbl_config_mgmt_service}config_mgmt_event"/>
+ *                     &lt;element name="global_key_event" type="{urn:com.lemonbeat.lsbl.lsbl_global_key_service}global_key_event"/>
+ *                     &lt;element name="heartbeat_event" type="{urn:com.lemonbeat.lsbl.lsbl_heartbeat_service}heartbeat_event"/>
+ *                     &lt;element name="metadata_event" type="{urn:com.lemonbeat.lsbl.lsbl_metadata_service}metadata_event"/>
+ *                     &lt;element name="status_event" type="{urn:com.lemonbeat.lsbl.lsbl_status_service}status_event"/>
+ *                     &lt;element name="value_event" type="{urn:com.lemonbeat.lsbl.lsbl_value_service}value_event"/>
+ *                     &lt;element name="inclusion_event" type="{urn:com.lemonbeat.lsbl.lsbl_inclusion_service}inclusion_event"/>
+ *                     &lt;element name="sys_event" type="{urn:com.lemonbeat.lsbl.lsbl_sys_event}sys_event"/>
+ *                     &lt;element name="firmware_event" type="{urn:com.lemonbeat.lsbl.lsbl_firmware_service}firmware_event"/>
  *                   &lt;/choice>
  *                   &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
  *                   &lt;attribute name="severity" use="required" type="{http://www.w3.org/2001/XMLSchema}unsignedInt" />
@@ -287,7 +298,7 @@ public class Lsbl {
 
 
     /**
-     * <p>Java-Klasse f�r anonymous complex type.
+     * <p>Java-Klasse für anonymous complex type.
      * 
      * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
      * 
@@ -412,7 +423,7 @@ public class Lsbl {
 
 
     /**
-     * <p>Java-Klasse f�r anonymous complex type.
+     * <p>Java-Klasse für anonymous complex type.
      * 
      * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
      * 
@@ -421,17 +432,19 @@ public class Lsbl {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;choice>
-     *         &lt;element name="common_cmd" type="{urn:lsbl_common}common_cmd"/>
-     *         &lt;element name="config_mgmt_cmd" type="{urn:lsbl_config_mgmt_service}config_mgmt_cmd"/>
-     *         &lt;element name="file_cmd" type="{urn:lsbl_file_service}file_cmd"/>
-     *         &lt;element name="global_key_cmd" type="{urn:lsbl_global_key_service}global_key_cmd"/>
-     *         &lt;element name="ges_cmd" type="{urn:lsbl_ges}ges_cmd"/>
-     *         &lt;element name="inclusion_cmd" type="{urn:lsbl_inclusion_service}inclusion_cmd"/>
-     *         &lt;element name="metadata_cmd" type="{urn:lsbl_metadata_service}metadata_cmd"/>
-     *         &lt;element name="topo_cmd" type="{urn:lsbl_topo_service}topo_cmd"/>
-     *         &lt;element name="test_cmd" type="{urn:lsbl_test}test_cmd"/>
-     *         &lt;element name="user_cmd" type="{urn:lsbl_user_service}user_cmd"/>
-     *         &lt;element name="value_cmd" type="{urn:lsbl_value_service}value_cmd"/>
+     *         &lt;element name="common_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_common}common_cmd"/>
+     *         &lt;element name="config_mgmt_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_config_mgmt_service}config_mgmt_cmd"/>
+     *         &lt;element name="global_key_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_global_key_service}global_key_cmd"/>
+     *         &lt;element name="heartbeat_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_heartbeat_service}heartbeat_cmd"/>
+     *         &lt;element name="ges_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_ges}ges_cmd"/>
+     *         &lt;element name="inclusion_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_inclusion_service}inclusion_cmd"/>
+     *         &lt;element name="metadata_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_metadata_service}metadata_cmd"/>
+     *         &lt;element name="status_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_status_service}status_cmd"/>
+     *         &lt;element name="topo_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}topo_cmd"/>
+     *         &lt;element name="test_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_test}test_cmd"/>
+     *         &lt;element name="user_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_cmd"/>
+     *         &lt;element name="value_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_value_service}value_cmd"/>
+     *         &lt;element name="firmware_cmd" type="{urn:com.lemonbeat.lsbl.lsbl_firmware_service}firmware_cmd"/>
      *       &lt;/choice>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -444,15 +457,17 @@ public class Lsbl {
     @XmlType(name = "", propOrder = {
         "commonCmd",
         "configMgmtCmd",
-        "fileCmd",
         "globalKeyCmd",
+        "heartbeatCmd",
         "gesCmd",
         "inclusionCmd",
         "metadataCmd",
+        "statusCmd",
         "topoCmd",
         "testCmd",
         "userCmd",
-        "valueCmd"
+        "valueCmd",
+        "firmwareCmd"
     })
     public static class Cmd {
 
@@ -460,16 +475,18 @@ public class Lsbl {
         protected CommonCmd commonCmd;
         @XmlElement(name = "config_mgmt_cmd")
         protected ConfigMgmtCmd configMgmtCmd;
-        @XmlElement(name = "file_cmd")
-        protected FileCmd fileCmd;
         @XmlElement(name = "global_key_cmd")
         protected GlobalKeyCmd globalKeyCmd;
+        @XmlElement(name = "heartbeat_cmd")
+        protected HeartbeatCmd heartbeatCmd;
         @XmlElement(name = "ges_cmd")
         protected GesCmd gesCmd;
         @XmlElement(name = "inclusion_cmd")
         protected InclusionCmd inclusionCmd;
         @XmlElement(name = "metadata_cmd")
         protected MetadataCmd metadataCmd;
+        @XmlElement(name = "status_cmd")
+        protected StatusCmd statusCmd;
         @XmlElement(name = "topo_cmd")
         protected TopoCmd topoCmd;
         @XmlElement(name = "test_cmd")
@@ -478,6 +495,8 @@ public class Lsbl {
         protected UserCmd userCmd;
         @XmlElement(name = "value_cmd")
         protected ValueCmd valueCmd;
+        @XmlElement(name = "firmware_cmd")
+        protected FirmwareCmd firmwareCmd;
 
         /**
          * Ruft den Wert der commonCmd-Eigenschaft ab.
@@ -528,30 +547,6 @@ public class Lsbl {
         }
 
         /**
-         * Ruft den Wert der fileCmd-Eigenschaft ab.
-         * 
-         * @return
-         *     possible object is
-         *     {@link FileCmd }
-         *     
-         */
-        public FileCmd getFileCmd() {
-            return fileCmd;
-        }
-
-        /**
-         * Legt den Wert der fileCmd-Eigenschaft fest.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link FileCmd }
-         *     
-         */
-        public void setFileCmd(FileCmd value) {
-            this.fileCmd = value;
-        }
-
-        /**
          * Ruft den Wert der globalKeyCmd-Eigenschaft ab.
          * 
          * @return
@@ -573,6 +568,30 @@ public class Lsbl {
          */
         public void setGlobalKeyCmd(GlobalKeyCmd value) {
             this.globalKeyCmd = value;
+        }
+
+        /**
+         * Ruft den Wert der heartbeatCmd-Eigenschaft ab.
+         * 
+         * @return
+         *     possible object is
+         *     {@link HeartbeatCmd }
+         *     
+         */
+        public HeartbeatCmd getHeartbeatCmd() {
+            return heartbeatCmd;
+        }
+
+        /**
+         * Legt den Wert der heartbeatCmd-Eigenschaft fest.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link HeartbeatCmd }
+         *     
+         */
+        public void setHeartbeatCmd(HeartbeatCmd value) {
+            this.heartbeatCmd = value;
         }
 
         /**
@@ -645,6 +664,30 @@ public class Lsbl {
          */
         public void setMetadataCmd(MetadataCmd value) {
             this.metadataCmd = value;
+        }
+
+        /**
+         * Ruft den Wert der statusCmd-Eigenschaft ab.
+         * 
+         * @return
+         *     possible object is
+         *     {@link StatusCmd }
+         *     
+         */
+        public StatusCmd getStatusCmd() {
+            return statusCmd;
+        }
+
+        /**
+         * Legt den Wert der statusCmd-Eigenschaft fest.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link StatusCmd }
+         *     
+         */
+        public void setStatusCmd(StatusCmd value) {
+            this.statusCmd = value;
         }
 
         /**
@@ -743,11 +786,35 @@ public class Lsbl {
             this.valueCmd = value;
         }
 
+        /**
+         * Ruft den Wert der firmwareCmd-Eigenschaft ab.
+         * 
+         * @return
+         *     possible object is
+         *     {@link FirmwareCmd }
+         *     
+         */
+        public FirmwareCmd getFirmwareCmd() {
+            return firmwareCmd;
+        }
+
+        /**
+         * Legt den Wert der firmwareCmd-Eigenschaft fest.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link FirmwareCmd }
+         *     
+         */
+        public void setFirmwareCmd(FirmwareCmd value) {
+            this.firmwareCmd = value;
+        }
+
     }
 
 
     /**
-     * <p>Java-Klasse f�r anonymous complex type.
+     * <p>Java-Klasse für anonymous complex type.
      * 
      * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
      * 
@@ -756,14 +823,16 @@ public class Lsbl {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;choice>
-     *         &lt;element name="topo_event" type="{urn:lsbl_topo_service}topo_event"/>
-     *         &lt;element name="config_mgmt_event" type="{urn:lsbl_config_mgmt_service}config_mgmt_event"/>
-     *         &lt;element name="global_key_event" type="{urn:lsbl_global_key_service}global_key_event"/>
-     *         &lt;element name="file_event" type="{urn:lsbl_file_service}file_event"/>
-     *         &lt;element name="metadata_event" type="{urn:lsbl_metadata_service}metadata_event"/>
-     *         &lt;element name="value_event" type="{urn:lsbl_value_service}value_event"/>
-     *         &lt;element name="inclusion_event" type="{urn:lsbl_inclusion_service}inclusion_event"/>
-     *         &lt;element name="sys_event" type="{urn:lsbl_sys_event}sys_event"/>
+     *         &lt;element name="topo_event" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}topo_event"/>
+     *         &lt;element name="config_mgmt_event" type="{urn:com.lemonbeat.lsbl.lsbl_config_mgmt_service}config_mgmt_event"/>
+     *         &lt;element name="global_key_event" type="{urn:com.lemonbeat.lsbl.lsbl_global_key_service}global_key_event"/>
+     *         &lt;element name="heartbeat_event" type="{urn:com.lemonbeat.lsbl.lsbl_heartbeat_service}heartbeat_event"/>
+     *         &lt;element name="metadata_event" type="{urn:com.lemonbeat.lsbl.lsbl_metadata_service}metadata_event"/>
+     *         &lt;element name="status_event" type="{urn:com.lemonbeat.lsbl.lsbl_status_service}status_event"/>
+     *         &lt;element name="value_event" type="{urn:com.lemonbeat.lsbl.lsbl_value_service}value_event"/>
+     *         &lt;element name="inclusion_event" type="{urn:com.lemonbeat.lsbl.lsbl_inclusion_service}inclusion_event"/>
+     *         &lt;element name="sys_event" type="{urn:com.lemonbeat.lsbl.lsbl_sys_event}sys_event"/>
+     *         &lt;element name="firmware_event" type="{urn:com.lemonbeat.lsbl.lsbl_firmware_service}firmware_event"/>
      *       &lt;/choice>
      *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
      *       &lt;attribute name="severity" use="required" type="{http://www.w3.org/2001/XMLSchema}unsignedInt" />
@@ -781,11 +850,13 @@ public class Lsbl {
         "topoEvent",
         "configMgmtEvent",
         "globalKeyEvent",
-        "fileEvent",
+        "heartbeatEvent",
         "metadataEvent",
+        "statusEvent",
         "valueEvent",
         "inclusionEvent",
-        "sysEvent"
+        "sysEvent",
+        "firmwareEvent"
     })
     public static class Event {
 
@@ -795,16 +866,20 @@ public class Lsbl {
         protected ConfigMgmtEvent configMgmtEvent;
         @XmlElement(name = "global_key_event")
         protected GlobalKeyEvent globalKeyEvent;
-        @XmlElement(name = "file_event")
-        protected FileEvent fileEvent;
+        @XmlElement(name = "heartbeat_event")
+        protected HeartbeatEvent heartbeatEvent;
         @XmlElement(name = "metadata_event")
         protected MetadataEvent metadataEvent;
+        @XmlElement(name = "status_event")
+        protected StatusEvent statusEvent;
         @XmlElement(name = "value_event")
         protected ValueEvent valueEvent;
         @XmlElement(name = "inclusion_event")
         protected InclusionEvent inclusionEvent;
         @XmlElement(name = "sys_event")
         protected SysEvent sysEvent;
+        @XmlElement(name = "firmware_event")
+        protected FirmwareEvent firmwareEvent;
         @XmlAttribute(name = "name", required = true)
         protected String name;
         @XmlAttribute(name = "severity", required = true)
@@ -889,27 +964,27 @@ public class Lsbl {
         }
 
         /**
-         * Ruft den Wert der fileEvent-Eigenschaft ab.
+         * Ruft den Wert der heartbeatEvent-Eigenschaft ab.
          * 
          * @return
          *     possible object is
-         *     {@link FileEvent }
+         *     {@link HeartbeatEvent }
          *     
          */
-        public FileEvent getFileEvent() {
-            return fileEvent;
+        public HeartbeatEvent getHeartbeatEvent() {
+            return heartbeatEvent;
         }
 
         /**
-         * Legt den Wert der fileEvent-Eigenschaft fest.
+         * Legt den Wert der heartbeatEvent-Eigenschaft fest.
          * 
          * @param value
          *     allowed object is
-         *     {@link FileEvent }
+         *     {@link HeartbeatEvent }
          *     
          */
-        public void setFileEvent(FileEvent value) {
-            this.fileEvent = value;
+        public void setHeartbeatEvent(HeartbeatEvent value) {
+            this.heartbeatEvent = value;
         }
 
         /**
@@ -934,6 +1009,30 @@ public class Lsbl {
          */
         public void setMetadataEvent(MetadataEvent value) {
             this.metadataEvent = value;
+        }
+
+        /**
+         * Ruft den Wert der statusEvent-Eigenschaft ab.
+         * 
+         * @return
+         *     possible object is
+         *     {@link StatusEvent }
+         *     
+         */
+        public StatusEvent getStatusEvent() {
+            return statusEvent;
+        }
+
+        /**
+         * Legt den Wert der statusEvent-Eigenschaft fest.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link StatusEvent }
+         *     
+         */
+        public void setStatusEvent(StatusEvent value) {
+            this.statusEvent = value;
         }
 
         /**
@@ -1006,6 +1105,30 @@ public class Lsbl {
          */
         public void setSysEvent(SysEvent value) {
             this.sysEvent = value;
+        }
+
+        /**
+         * Ruft den Wert der firmwareEvent-Eigenschaft ab.
+         * 
+         * @return
+         *     possible object is
+         *     {@link FirmwareEvent }
+         *     
+         */
+        public FirmwareEvent getFirmwareEvent() {
+            return firmwareEvent;
+        }
+
+        /**
+         * Legt den Wert der firmwareEvent-Eigenschaft fest.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link FirmwareEvent }
+         *     
+         */
+        public void setFirmwareEvent(FirmwareEvent value) {
+            this.firmwareEvent = value;
         }
 
         /**
@@ -1100,7 +1223,7 @@ public class Lsbl {
 
 
     /**
-     * <p>Java-Klasse f�r anonymous complex type.
+     * <p>Java-Klasse für anonymous complex type.
      * 
      * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
      * 
@@ -1109,17 +1232,19 @@ public class Lsbl {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;choice>
-     *         &lt;element name="common_response" type="{urn:lsbl_common}common_response"/>
-     *         &lt;element name="config_mgmt_response" type="{urn:lsbl_config_mgmt_service}config_mgmt_response"/>
-     *         &lt;element name="topo_response" type="{urn:lsbl_topo_service}topo_response"/>
-     *         &lt;element name="user_response" type="{urn:lsbl_user_service}user_response"/>
-     *         &lt;element name="metadata_response" type="{urn:lsbl_metadata_service}metadata_response"/>
-     *         &lt;element name="inclusion_response" type="{urn:lsbl_inclusion_service}inclusion_response"/>
-     *         &lt;element name="global_key_response" type="{urn:lsbl_global_key_service}global_key_response"/>
-     *         &lt;element name="file_response" type="{urn:lsbl_file_service}file_response"/>
-     *         &lt;element name="value_response" type="{urn:lsbl_value_service}value_response"/>
-     *         &lt;element name="ges_response" type="{urn:lsbl_ges}ges_response"/>
-     *         &lt;element name="test_response" type="{urn:lsbl_test}test_response"/>
+     *         &lt;element name="common_response" type="{urn:com.lemonbeat.lsbl.lsbl_common}common_response"/>
+     *         &lt;element name="config_mgmt_response" type="{urn:com.lemonbeat.lsbl.lsbl_config_mgmt_service}config_mgmt_response"/>
+     *         &lt;element name="topo_response" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}topo_response"/>
+     *         &lt;element name="user_response" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_response"/>
+     *         &lt;element name="metadata_response" type="{urn:com.lemonbeat.lsbl.lsbl_metadata_service}metadata_response"/>
+     *         &lt;element name="status_response" type="{urn:com.lemonbeat.lsbl.lsbl_status_service}status_response"/>
+     *         &lt;element name="inclusion_response" type="{urn:com.lemonbeat.lsbl.lsbl_inclusion_service}inclusion_response"/>
+     *         &lt;element name="global_key_response" type="{urn:com.lemonbeat.lsbl.lsbl_global_key_service}global_key_response"/>
+     *         &lt;element name="heartbeat_response" type="{urn:com.lemonbeat.lsbl.lsbl_heartbeat_service}heartbeat_response"/>
+     *         &lt;element name="value_response" type="{urn:com.lemonbeat.lsbl.lsbl_value_service}value_response"/>
+     *         &lt;element name="ges_response" type="{urn:com.lemonbeat.lsbl.lsbl_ges}ges_response"/>
+     *         &lt;element name="test_response" type="{urn:com.lemonbeat.lsbl.lsbl_test}test_response"/>
+     *         &lt;element name="firmware_response" type="{urn:com.lemonbeat.lsbl.lsbl_firmware_service}firmware_response"/>
      *       &lt;/choice>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1135,12 +1260,14 @@ public class Lsbl {
         "topoResponse",
         "userResponse",
         "metadataResponse",
+        "statusResponse",
         "inclusionResponse",
         "globalKeyResponse",
-        "fileResponse",
+        "heartbeatResponse",
         "valueResponse",
         "gesResponse",
-        "testResponse"
+        "testResponse",
+        "firmwareResponse"
     })
     public static class Response {
 
@@ -1154,18 +1281,22 @@ public class Lsbl {
         protected UserResponse userResponse;
         @XmlElement(name = "metadata_response")
         protected MetadataResponse metadataResponse;
+        @XmlElement(name = "status_response")
+        protected StatusResponse statusResponse;
         @XmlElement(name = "inclusion_response")
         protected InclusionResponse inclusionResponse;
         @XmlElement(name = "global_key_response")
         protected GlobalKeyResponse globalKeyResponse;
-        @XmlElement(name = "file_response")
-        protected FileResponse fileResponse;
+        @XmlElement(name = "heartbeat_response")
+        protected HeartbeatResponse heartbeatResponse;
         @XmlElement(name = "value_response")
         protected ValueResponse valueResponse;
         @XmlElement(name = "ges_response")
         protected GesResponse gesResponse;
         @XmlElement(name = "test_response")
         protected TestResponse testResponse;
+        @XmlElement(name = "firmware_response")
+        protected FirmwareResponse firmwareResponse;
 
         /**
          * Ruft den Wert der commonResponse-Eigenschaft ab.
@@ -1288,6 +1419,30 @@ public class Lsbl {
         }
 
         /**
+         * Ruft den Wert der statusResponse-Eigenschaft ab.
+         * 
+         * @return
+         *     possible object is
+         *     {@link StatusResponse }
+         *     
+         */
+        public StatusResponse getStatusResponse() {
+            return statusResponse;
+        }
+
+        /**
+         * Legt den Wert der statusResponse-Eigenschaft fest.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link StatusResponse }
+         *     
+         */
+        public void setStatusResponse(StatusResponse value) {
+            this.statusResponse = value;
+        }
+
+        /**
          * Ruft den Wert der inclusionResponse-Eigenschaft ab.
          * 
          * @return
@@ -1336,27 +1491,27 @@ public class Lsbl {
         }
 
         /**
-         * Ruft den Wert der fileResponse-Eigenschaft ab.
+         * Ruft den Wert der heartbeatResponse-Eigenschaft ab.
          * 
          * @return
          *     possible object is
-         *     {@link FileResponse }
+         *     {@link HeartbeatResponse }
          *     
          */
-        public FileResponse getFileResponse() {
-            return fileResponse;
+        public HeartbeatResponse getHeartbeatResponse() {
+            return heartbeatResponse;
         }
 
         /**
-         * Legt den Wert der fileResponse-Eigenschaft fest.
+         * Legt den Wert der heartbeatResponse-Eigenschaft fest.
          * 
          * @param value
          *     allowed object is
-         *     {@link FileResponse }
+         *     {@link HeartbeatResponse }
          *     
          */
-        public void setFileResponse(FileResponse value) {
-            this.fileResponse = value;
+        public void setHeartbeatResponse(HeartbeatResponse value) {
+            this.heartbeatResponse = value;
         }
 
         /**
@@ -1429,6 +1584,30 @@ public class Lsbl {
          */
         public void setTestResponse(TestResponse value) {
             this.testResponse = value;
+        }
+
+        /**
+         * Ruft den Wert der firmwareResponse-Eigenschaft ab.
+         * 
+         * @return
+         *     possible object is
+         *     {@link FirmwareResponse }
+         *     
+         */
+        public FirmwareResponse getFirmwareResponse() {
+            return firmwareResponse;
+        }
+
+        /**
+         * Legt den Wert der firmwareResponse-Eigenschaft fest.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link FirmwareResponse }
+         *     
+         */
+        public void setFirmwareResponse(FirmwareResponse value) {
+            this.firmwareResponse = value;
         }
 
     }

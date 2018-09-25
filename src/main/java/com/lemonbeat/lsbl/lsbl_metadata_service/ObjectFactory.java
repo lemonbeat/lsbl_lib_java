@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the lsbl_metadata_service package. 
+ * generated in the com.lemonbeat.lsbl.lsbl_metadata_service package.
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -30,10 +30,50 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: lsbl_metadata_service
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.lemonbeat.lsbl.lsbl_metadata_service
      * 
      */
     public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link MetadataDeviceIncludedEvent }
+     * 
+     */
+    public MetadataDeviceIncludedEvent createMetadataDeviceIncludedEvent() {
+        return new MetadataDeviceIncludedEvent();
+    }
+
+    /**
+     * Create an instance of {@link MetadataEvent }
+     * 
+     */
+    public MetadataEvent createMetadataEvent() {
+        return new MetadataEvent();
+    }
+
+    /**
+     * Create an instance of {@link MetadataDeviceRemovedEvent }
+     * 
+     */
+    public MetadataDeviceRemovedEvent createMetadataDeviceRemovedEvent() {
+        return new MetadataDeviceRemovedEvent();
+    }
+
+    /**
+     * Create an instance of {@link MetadataDeleteRequest }
+     * 
+     */
+    public MetadataDeleteRequest createMetadataDeleteRequest() {
+        return new MetadataDeleteRequest();
+    }
+
+    /**
+     * Create an instance of {@link MetadataGatewayIncludedEvent }
+     * 
+     */
+    public MetadataGatewayIncludedEvent createMetadataGatewayIncludedEvent() {
+        return new MetadataGatewayIncludedEvent();
     }
 
     /**
@@ -61,11 +101,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MetadataDeviceIncludedEvent }
+     * Create an instance of {@link MetadataGatewayRemovedEvent }
      * 
      */
-    public MetadataDeviceIncludedEvent createMetadataDeviceIncludedEvent() {
-        return new MetadataDeviceIncludedEvent();
+    public MetadataGatewayRemovedEvent createMetadataGatewayRemovedEvent() {
+        return new MetadataGatewayRemovedEvent();
     }
 
     /**
@@ -85,14 +125,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MetadataEvent }
-     * 
-     */
-    public MetadataEvent createMetadataEvent() {
-        return new MetadataEvent();
-    }
-
-    /**
      * Create an instance of {@link MetadataAttribute }
      * 
      */
@@ -106,22 +138,6 @@ public class ObjectFactory {
      */
     public MetadataSetRequest createMetadataSetRequest() {
         return new MetadataSetRequest();
-    }
-
-    /**
-     * Create an instance of {@link MetadataDeleteRequest }
-     * 
-     */
-    public MetadataDeleteRequest createMetadataDeleteRequest() {
-        return new MetadataDeleteRequest();
-    }
-
-    /**
-     * Create an instance of {@link MetadataGatewayIncludedEvent }
-     * 
-     */
-    public MetadataGatewayIncludedEvent createMetadataGatewayIncludedEvent() {
-        return new MetadataGatewayIncludedEvent();
     }
 
 }

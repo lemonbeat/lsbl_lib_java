@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -16,10 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- *                 Requests a list of all devices included by the gateway with param SGTIN into the local Lemonbeat radio network. The response list consists of a full device description per device.
- *             
+ *         Requests a list of all devices included by the gateway with param SGTIN into the local Lemonbeat radio network.
+ *         The response list consists of a full device description per device.
+ *       
  * 
- * <p>Java-Klasse f�r gw_device_list_get_request complex type.
+ * <p>Java-Klasse für gw_device_list_get_request complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
@@ -28,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="sgtin" type="{urn:lsbl_common_base_types}sgtin_96"/>
+ *         &lt;element name="gw_sgtin" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}sgtin_96"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -39,35 +40,35 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "gw_device_list_get_request", propOrder = {
-    "sgtin"
+    "gwSgtin"
 })
 public class GwDeviceListGetRequest {
 
-    @XmlElement(required = true)
-    protected String sgtin;
+    @XmlElement(name = "gw_sgtin", required = true)
+    protected String gwSgtin;
 
     /**
-     * Ruft den Wert der sgtin-Eigenschaft ab.
+     * Ruft den Wert der gwSgtin-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getSgtin() {
-        return sgtin;
+    public String getGwSgtin() {
+        return gwSgtin;
     }
 
     /**
-     * Legt den Wert der sgtin-Eigenschaft fest.
+     * Legt den Wert der gwSgtin-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setSgtin(String value) {
-        this.sgtin = value;
+    public void setGwSgtin(String value) {
+        this.gwSgtin = value;
     }
 
 }

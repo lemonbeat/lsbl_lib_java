@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the lsbl_topo_service package. 
+ * generated in the com.lemonbeat.lsbl.lsbl_topo_service package.
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -30,10 +30,18 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: lsbl_topo_service
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.lemonbeat.lsbl.lsbl_topo_service
      * 
      */
     public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link DeviceRemoveRequest }
+     * 
+     */
+    public DeviceRemoveRequest createDeviceRemoveRequest() {
+        return new DeviceRemoveRequest();
     }
 
     /**
@@ -93,6 +101,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GwRemoveRequest }
+     * 
+     */
+    public GwRemoveRequest createGwRemoveRequest() {
+        return new GwRemoveRequest();
+    }
+
+    /**
      * Create an instance of {@link GwDescriptionPublishRequest }
      * 
      */
@@ -117,6 +133,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GwReplacementInitRequest }
+     * 
+     */
+    public GwReplacementInitRequest createGwReplacementInitRequest() {
+        return new GwReplacementInitRequest();
+    }
+
+    /**
      * Create an instance of {@link DeviceAutoincludeDeleteRequest }
      * 
      */
@@ -133,11 +157,35 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GwNetworkKeyGetRequest }
+     * 
+     */
+    public GwNetworkKeyGetRequest createGwNetworkKeyGetRequest() {
+        return new GwNetworkKeyGetRequest();
+    }
+
+    /**
+     * Create an instance of {@link DeviceReplacementInitializedEvent }
+     * 
+     */
+    public DeviceReplacementInitializedEvent createDeviceReplacementInitializedEvent() {
+        return new DeviceReplacementInitializedEvent();
+    }
+
+    /**
      * Create an instance of {@link DeviceExcludedEvent }
      * 
      */
     public DeviceExcludedEvent createDeviceExcludedEvent() {
         return new DeviceExcludedEvent();
+    }
+
+    /**
+     * Create an instance of {@link GwReplacementExecuteRequest }
+     * 
+     */
+    public GwReplacementExecuteRequest createGwReplacementExecuteRequest() {
+        return new GwReplacementExecuteRequest();
     }
 
     /**
@@ -165,11 +213,35 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GwNetworkKeyGetResponse }
+     * 
+     */
+    public GwNetworkKeyGetResponse createGwNetworkKeyGetResponse() {
+        return new GwNetworkKeyGetResponse();
+    }
+
+    /**
+     * Create an instance of {@link DeviceReplacementInitRequest }
+     * 
+     */
+    public DeviceReplacementInitRequest createDeviceReplacementInitRequest() {
+        return new DeviceReplacementInitRequest();
+    }
+
+    /**
      * Create an instance of {@link DeviceAutoincludeSetRequest }
      * 
      */
     public DeviceAutoincludeSetRequest createDeviceAutoincludeSetRequest() {
         return new DeviceAutoincludeSetRequest();
+    }
+
+    /**
+     * Create an instance of {@link DeviceRemovedEvent }
+     * 
+     */
+    public DeviceRemovedEvent createDeviceRemovedEvent() {
+        return new DeviceRemovedEvent();
     }
 
     /**
@@ -226,6 +298,22 @@ public class ObjectFactory {
      */
     public TopoEvent createTopoEvent() {
         return new TopoEvent();
+    }
+
+    /**
+     * Create an instance of {@link GatewayReplacementInitializedEvent }
+     * 
+     */
+    public GatewayReplacementInitializedEvent createGatewayReplacementInitializedEvent() {
+        return new GatewayReplacementInitializedEvent();
+    }
+
+    /**
+     * Create an instance of {@link GatewayRemovedEvent }
+     * 
+     */
+    public GatewayRemovedEvent createGatewayRemovedEvent() {
+        return new GatewayRemovedEvent();
     }
 
     /**

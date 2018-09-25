@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the lsbl_user_service package. 
+ * generated in the com.lemonbeat.lsbl.lsbl_user_service package.
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -30,7 +30,7 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: lsbl_user_service
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.lemonbeat.lsbl.lsbl_user_service
      * 
      */
     public ObjectFactory() {
@@ -45,19 +45,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UserMetadataSetRequest }
+     * Create an instance of {@link UserGroupDeleteRequest }
      * 
      */
-    public UserMetadataSetRequest createUserMetadataSetRequest() {
-        return new UserMetadataSetRequest();
-    }
-
-    /**
-     * Create an instance of {@link UserCmd }
-     * 
-     */
-    public UserCmd createUserCmd() {
-        return new UserCmd();
+    public UserGroupDeleteRequest createUserGroupDeleteRequest() {
+        return new UserGroupDeleteRequest();
     }
 
     /**
@@ -77,22 +69,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UserMetadataDeleteRequest }
-     * 
-     */
-    public UserMetadataDeleteRequest createUserMetadataDeleteRequest() {
-        return new UserMetadataDeleteRequest();
-    }
-
-    /**
-     * Create an instance of {@link MetadataAttribute }
-     * 
-     */
-    public MetadataAttribute createMetadataAttribute() {
-        return new MetadataAttribute();
-    }
-
-    /**
      * Create an instance of {@link UserGetResponse }
      * 
      */
@@ -101,19 +77,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UserMetadataReport }
+     * Create an instance of {@link GroupGetRequest }
      * 
      */
-    public UserMetadataReport createUserMetadataReport() {
-        return new UserMetadataReport();
-    }
-
-    /**
-     * Create an instance of {@link UserGetRequest }
-     * 
-     */
-    public UserGetRequest createUserGetRequest() {
-        return new UserGetRequest();
+    public GroupGetRequest createGroupGetRequest() {
+        return new GroupGetRequest();
     }
 
     /**
@@ -130,6 +98,142 @@ public class ObjectFactory {
      */
     public UserAddRequest createUserAddRequest() {
         return new UserAddRequest();
+    }
+
+    /**
+     * Create an instance of {@link GroupAddRequest }
+     * 
+     */
+    public GroupAddRequest createGroupAddRequest() {
+        return new GroupAddRequest();
+    }
+
+    /**
+     * Create an instance of {@link GroupMetadataSetRequest }
+     * 
+     */
+    public GroupMetadataSetRequest createGroupMetadataSetRequest() {
+        return new GroupMetadataSetRequest();
+    }
+
+    /**
+     * Create an instance of {@link UserMetadataSetRequest }
+     * 
+     */
+    public UserMetadataSetRequest createUserMetadataSetRequest() {
+        return new UserMetadataSetRequest();
+    }
+
+    /**
+     * Create an instance of {@link UserGroupAddRequest }
+     * 
+     */
+    public UserGroupAddRequest createUserGroupAddRequest() {
+        return new UserGroupAddRequest();
+    }
+
+    /**
+     * Create an instance of {@link GroupGetResponse }
+     * 
+     */
+    public GroupGetResponse createGroupGetResponse() {
+        return new GroupGetResponse();
+    }
+
+    /**
+     * Create an instance of {@link MetadataAttribute }
+     * 
+     */
+    public MetadataAttribute createMetadataAttribute() {
+        return new MetadataAttribute();
+    }
+
+    /**
+     * Create an instance of {@link GroupMetadataDeleteRequest }
+     * 
+     */
+    public GroupMetadataDeleteRequest createGroupMetadataDeleteRequest() {
+        return new GroupMetadataDeleteRequest();
+    }
+
+    /**
+     * Create an instance of {@link UserDeleteRequest }
+     * 
+     */
+    public UserDeleteRequest createUserDeleteRequest() {
+        return new UserDeleteRequest();
+    }
+
+    /**
+     * Create an instance of {@link GroupMetadataGetRequest }
+     * 
+     */
+    public GroupMetadataGetRequest createGroupMetadataGetRequest() {
+        return new GroupMetadataGetRequest();
+    }
+
+    /**
+     * Create an instance of {@link UserCmd }
+     * 
+     */
+    public UserCmd createUserCmd() {
+        return new UserCmd();
+    }
+
+    /**
+     * Create an instance of {@link UserList }
+     * 
+     */
+    public UserList createUserList() {
+        return new UserList();
+    }
+
+    /**
+     * Create an instance of {@link UserGetRequest }
+     * 
+     */
+    public UserGetRequest createUserGetRequest() {
+        return new UserGetRequest();
+    }
+
+    /**
+     * Create an instance of {@link GroupList }
+     * 
+     */
+    public GroupList createGroupList() {
+        return new GroupList();
+    }
+
+    /**
+     * Create an instance of {@link GroupMetadataReport }
+     * 
+     */
+    public GroupMetadataReport createGroupMetadataReport() {
+        return new GroupMetadataReport();
+    }
+
+    /**
+     * Create an instance of {@link UserMetadataDeleteRequest }
+     * 
+     */
+    public UserMetadataDeleteRequest createUserMetadataDeleteRequest() {
+        return new UserMetadataDeleteRequest();
+    }
+
+    /**
+     * Create an instance of {@link UserMetadataReport }
+     * 
+     */
+    public UserMetadataReport createUserMetadataReport() {
+        return new UserMetadataReport();
+    }
+
+    /**
+     * Create an instance of {@link GroupDeleteRequest }
+     * 
+     */
+    public GroupDeleteRequest createGroupDeleteRequest() {
+        return new GroupDeleteRequest();
     }
 
 }

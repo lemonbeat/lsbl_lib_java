@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse f�r message_type.
+ * <p>Java-Klasse für message_type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * <p>
@@ -26,10 +26,6 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="LSBL_Event"/>
  *     &lt;enumeration value="LSBL_APP_ACK"/>
  *     &lt;enumeration value="LSBL_APP_NACK"/>
- *     &lt;enumeration value="LSBL_Fileinfo_Request"/>
- *     &lt;enumeration value="LSBL_Filestream_Complete"/>
- *     &lt;enumeration value="LSBL_Filestream_Retransmission"/>
- *     &lt;enumeration value="LSBL_Filestream_Request"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -81,43 +77,7 @@ public enum MessageType {
      *               
      * 
      */
-    LSBL_APP_NACK("LSBL_APP_NACK"),
-
-    /**
-     * 
-     *                 The LsBL message is a fileinfo request.
-     *               
-     * 
-     */
-    @XmlEnumValue("LSBL_Fileinfo_Request")
-    LSBL_FILEINFO_REQUEST("LSBL_Fileinfo_Request"),
-
-    /**
-     * 
-     *                 The LsBL message is a complete filestream.
-     *               
-     * 
-     */
-    @XmlEnumValue("LSBL_Filestream_Complete")
-    LSBL_FILESTREAM_COMPLETE("LSBL_Filestream_Complete"),
-
-    /**
-     * 
-     *                 The LsBL message is a retransmission.
-     *               
-     * 
-     */
-    @XmlEnumValue("LSBL_Filestream_Retransmission")
-    LSBL_FILESTREAM_RETRANSMISSION("LSBL_Filestream_Retransmission"),
-
-    /**
-     * 
-     *                 The LsBL message is a filestream request.
-     *               
-     * 
-     */
-    @XmlEnumValue("LSBL_Filestream_Request")
-    LSBL_FILESTREAM_REQUEST("LSBL_Filestream_Request");
+    LSBL_APP_NACK("LSBL_APP_NACK");
     private final String value;
 
     MessageType(String v) {

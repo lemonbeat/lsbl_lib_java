@@ -1,8 +1,8 @@
 //
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.06.09 um 10:12:36 PM CEST 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2018.09.20 um 04:07:26 PM CEST 
 //
 
 
@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *                 Definition of the commands of the metadata service.
  *             
  * 
- * <p>Java-Klasse f�r metadata_cmd complex type.
+ * <p>Java-Klasse für metadata_cmd complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
@@ -29,9 +29,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="metadata_get" type="{urn:lsbl_metadata_service}metadata_get_request"/>
- *           &lt;element name="metadata_set" type="{urn:lsbl_metadata_service}metadata_set_request"/>
- *           &lt;element name="metadata_delete" type="{urn:lsbl_metadata_service}metadata_delete_request"/>
+ *           &lt;element name="metadata_get" type="{urn:com.lemonbeat.lsbl.lsbl_metadata_service}metadata_get_request"/>
+ *           &lt;element name="metadata_set" type="{urn:com.lemonbeat.lsbl.lsbl_metadata_service}metadata_set_request"/>
+ *           &lt;element name="metadata_delete" type="{urn:com.lemonbeat.lsbl.lsbl_metadata_service}metadata_delete_request"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>
