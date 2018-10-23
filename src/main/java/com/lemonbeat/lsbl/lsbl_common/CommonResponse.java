@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -32,10 +32,10 @@ import com.lemonbeat.lsbl.lsbl_common_base_types.PendingResponse;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="request_from_device" type="{urn:com.lemonbeat.lsbl.lsbl_common}request_from_device"/>
- *           &lt;element name="ack" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}ack-response"/>
- *           &lt;element name="nack" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}nack-response"/>
- *           &lt;element name="pending" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}pending-response"/>
+ *           &lt;element name="request_from_device" type="{urn:lsbl_common}request_from_device"/>
+ *           &lt;element name="ack" type="{urn:lsbl_common_base_types}ack-response"/>
+ *           &lt;element name="nack" type="{urn:lsbl_common_base_types}nack-response"/>
+ *           &lt;element name="pending" type="{urn:lsbl_common_base_types}pending-response"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>

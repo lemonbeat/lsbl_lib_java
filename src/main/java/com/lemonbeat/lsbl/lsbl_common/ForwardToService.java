@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -30,10 +30,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="mac" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}mac"/>
- *         &lt;element name="device_sgtin" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}sgtin_96"/>
+ *         &lt;element name="device_mac" type="{urn:lsbl_common_base_types}mac"/>
+ *         &lt;element name="device_sgtin" type="{urn:lsbl_common_base_types}sgtin_96"/>
  *         &lt;element name="format" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="lsdl" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}lsdl"/>
+ *         &lt;element name="lsdl" type="{urn:lsbl_common_base_types}lsdl"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -44,15 +44,15 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "forward_to_service", propOrder = {
-    "mac",
+    "deviceMac",
     "deviceSgtin",
     "format",
     "lsdl"
 })
 public class ForwardToService {
 
-    @XmlElement(required = true)
-    protected String mac;
+    @XmlElement(name = "device_mac", required = true)
+    protected String deviceMac;
     @XmlElement(name = "device_sgtin", required = true)
     protected String deviceSgtin;
     @XmlElement(required = true, defaultValue = "XML")
@@ -61,27 +61,27 @@ public class ForwardToService {
     protected String lsdl;
 
     /**
-     * Ruft den Wert der mac-Eigenschaft ab.
+     * Ruft den Wert der deviceMac-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getMac() {
-        return mac;
+    public String getDeviceMac() {
+        return deviceMac;
     }
 
     /**
-     * Legt den Wert der mac-Eigenschaft fest.
+     * Legt den Wert der deviceMac-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setMac(String value) {
-        this.mac = value;
+    public void setDeviceMac(String value) {
+        this.deviceMac = value;
     }
 
     /**

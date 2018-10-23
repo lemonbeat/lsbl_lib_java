@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -28,8 +28,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="sgtin" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}sgtin_96"/>
- *         &lt;element name="lsdl" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}lsdl"/>
+ *         &lt;element name="gw_sgtin" type="{urn:lsbl_common_base_types}sgtin_96"/>
+ *         &lt;element name="lsdl" type="{urn:lsbl_common_base_types}lsdl"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -40,38 +40,38 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "gateway_description", propOrder = {
-    "sgtin",
+    "gwSgtin",
     "lsdl"
 })
 public class GatewayDescription {
 
-    @XmlElement(required = true)
-    protected String sgtin;
+    @XmlElement(name = "gw_sgtin", required = true)
+    protected String gwSgtin;
     @XmlElement(required = true)
     protected String lsdl;
 
     /**
-     * Ruft den Wert der sgtin-Eigenschaft ab.
+     * Ruft den Wert der gwSgtin-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getSgtin() {
-        return sgtin;
+    public String getGwSgtin() {
+        return gwSgtin;
     }
 
     /**
-     * Legt den Wert der sgtin-Eigenschaft fest.
+     * Legt den Wert der gwSgtin-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setSgtin(String value) {
-        this.sgtin = value;
+    public void setGwSgtin(String value) {
+        this.gwSgtin = value;
     }
 
     /**

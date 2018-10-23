@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -29,9 +29,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="device_sgtin" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}sgtin_96"/>
- *         &lt;element name="gw_sgtin" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}sgtin_96" minOccurs="0"/>
- *         &lt;element name="device_mac" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}mac" minOccurs="0"/>
+ *         &lt;element name="device_sgtin" type="{urn:lsbl_common_base_types}sgtin_96"/>
+ *         &lt;element name="gw_sgtin" type="{urn:lsbl_common_base_types}sgtin_96" minOccurs="0"/>
+ *         &lt;element name="device_mac" type="{urn:lsbl_common_base_types}mac" minOccurs="0"/>
  *         &lt;element name="radio_mode" type="{http://www.w3.org/2001/XMLSchema}unsignedInt" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

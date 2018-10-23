@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the com.lemonbeat.lsbl.lsbl_metadata_service package.
+ * generated in the lsbl_metadata_service package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -30,10 +30,18 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.lemonbeat.lsbl.lsbl_metadata_service
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: lsbl_metadata_service
      * 
      */
     public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link MetadataStatusReportedEvent }
+     * 
+     */
+    public MetadataStatusReportedEvent createMetadataStatusReportedEvent() {
+        return new MetadataStatusReportedEvent();
     }
 
     /**
@@ -42,6 +50,14 @@ public class ObjectFactory {
      */
     public MetadataDeviceIncludedEvent createMetadataDeviceIncludedEvent() {
         return new MetadataDeviceIncludedEvent();
+    }
+
+    /**
+     * Create an instance of {@link MetadataDeviceExcludedEvent }
+     * 
+     */
+    public MetadataDeviceExcludedEvent createMetadataDeviceExcludedEvent() {
+        return new MetadataDeviceExcludedEvent();
     }
 
     /**
@@ -69,6 +85,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link MetadataDeviceConfigFetchedEvent }
+     * 
+     */
+    public MetadataDeviceConfigFetchedEvent createMetadataDeviceConfigFetchedEvent() {
+        return new MetadataDeviceConfigFetchedEvent();
+    }
+
+    /**
      * Create an instance of {@link MetadataGatewayIncludedEvent }
      * 
      */
@@ -90,6 +114,14 @@ public class ObjectFactory {
      */
     public MetadataReport createMetadataReport() {
         return new MetadataReport();
+    }
+
+    /**
+     * Create an instance of {@link StatusReportItem }
+     * 
+     */
+    public StatusReportItem createStatusReportItem() {
+        return new StatusReportItem();
     }
 
     /**
@@ -125,6 +157,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link MetadataDeviceConfigErrorEvent }
+     * 
+     */
+    public MetadataDeviceConfigErrorEvent createMetadataDeviceConfigErrorEvent() {
+        return new MetadataDeviceConfigErrorEvent();
+    }
+
+    /**
+     * Create an instance of {@link MetadataDeviceConfigWrittenEvent }
+     * 
+     */
+    public MetadataDeviceConfigWrittenEvent createMetadataDeviceConfigWrittenEvent() {
+        return new MetadataDeviceConfigWrittenEvent();
+    }
+
+    /**
      * Create an instance of {@link MetadataAttribute }
      * 
      */
@@ -138,6 +186,14 @@ public class ObjectFactory {
      */
     public MetadataSetRequest createMetadataSetRequest() {
         return new MetadataSetRequest();
+    }
+
+    /**
+     * Create an instance of {@link StatusReportList }
+     * 
+     */
+    public StatusReportList createStatusReportList() {
+        return new StatusReportList();
     }
 
 }
