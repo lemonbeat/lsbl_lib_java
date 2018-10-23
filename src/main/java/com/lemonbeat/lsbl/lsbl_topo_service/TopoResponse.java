@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -29,13 +29,13 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="gw_list_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_list_get_response"/>
- *           &lt;element name="gw_description_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gateway_description"/>
- *           &lt;element name="gw_device_list_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_device_list_get_response"/>
- *           &lt;element name="gw_network_key_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_network_key_get_response"/>
- *           &lt;element name="device_description_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_description_get_response"/>
- *           &lt;element name="device_find" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_find_response"/>
- *           &lt;element name="device_description_report" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_description_get_response"/>
+ *           &lt;element name="gw_list_get" type="{urn:lsbl_topo_service}gw_list_get_response"/>
+ *           &lt;element name="gw_description_get" type="{urn:lsbl_topo_service}gateway_description"/>
+ *           &lt;element name="gw_device_list_get" type="{urn:lsbl_topo_service}gw_device_list_get_response"/>
+ *           &lt;element name="gw_network_key_get" type="{urn:lsbl_topo_service}gw_network_key_get_response"/>
+ *           &lt;element name="device_description_get" type="{urn:lsbl_topo_service}device_description_get_response"/>
+ *           &lt;element name="device_find" type="{urn:lsbl_topo_service}device_find_response"/>
+ *           &lt;element name="device_description_report" type="{urn:lsbl_topo_service}device_description_report_response"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -70,7 +70,7 @@ public class TopoResponse {
     @XmlElement(name = "device_find")
     protected DeviceFindResponse deviceFind;
     @XmlElement(name = "device_description_report")
-    protected DeviceDescriptionGetResponse deviceDescriptionReport;
+    protected DeviceDescriptionReportResponse deviceDescriptionReport;
 
     /**
      * Ruft den Wert der gwListGet-Eigenschaft ab.
@@ -221,10 +221,10 @@ public class TopoResponse {
      * 
      * @return
      *     possible object is
-     *     {@link DeviceDescriptionGetResponse }
+     *     {@link DeviceDescriptionReportResponse }
      *     
      */
-    public DeviceDescriptionGetResponse getDeviceDescriptionReport() {
+    public DeviceDescriptionReportResponse getDeviceDescriptionReport() {
         return deviceDescriptionReport;
     }
 
@@ -233,10 +233,10 @@ public class TopoResponse {
      * 
      * @param value
      *     allowed object is
-     *     {@link DeviceDescriptionGetResponse }
+     *     {@link DeviceDescriptionReportResponse }
      *     
      */
-    public void setDeviceDescriptionReport(DeviceDescriptionGetResponse value) {
+    public void setDeviceDescriptionReport(DeviceDescriptionReportResponse value) {
         this.deviceDescriptionReport = value;
     }
 

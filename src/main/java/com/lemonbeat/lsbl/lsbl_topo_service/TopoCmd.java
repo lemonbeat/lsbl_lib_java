@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -29,23 +29,23 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="forward_to_service" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}forward_to_service"/>
- *           &lt;element name="gw_list_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_list_get_request"/>
- *           &lt;element name="gw_description_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_description_get_request"/>
- *           &lt;element name="gw_device_list_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_device_list_get_request"/>
- *           &lt;element name="gw_network_key_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_network_key_get_request"/>
- *           &lt;element name="gw_replacement_init" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_replacement_init_request"/>
- *           &lt;element name="gw_replacement_execute" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_replacement_execute_request"/>
- *           &lt;element name="gw_description_publish" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_description_publish_request"/>
- *           &lt;element name="gw_remove" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gw_remove_request"/>
- *           &lt;element name="device_description_get" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_description_get_request"/>
- *           &lt;element name="device_include" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_include_request"/>
- *           &lt;element name="device_find" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_find_request"/>
- *           &lt;element name="device_autoinclude_set" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_autoinclude_set_request"/>
- *           &lt;element name="device_autoinclude_delete" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_autoinclude_delete_request"/>
- *           &lt;element name="device_factory_reset" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_factory_reset"/>
- *           &lt;element name="device_remove" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_remove_request"/>
- *           &lt;element name="device_replacement_init" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_replacement_init_request"/>
+ *           &lt;element name="forward_to_service" type="{urn:lsbl_topo_service}forward_to_service"/>
+ *           &lt;element name="gw_list_get" type="{urn:lsbl_topo_service}gw_list_get_request"/>
+ *           &lt;element name="gw_description_get" type="{urn:lsbl_topo_service}gw_description_get_request"/>
+ *           &lt;element name="gw_device_list_get" type="{urn:lsbl_topo_service}gw_device_list_get_request"/>
+ *           &lt;element name="gw_network_key_get" type="{urn:lsbl_topo_service}gw_network_key_get_request"/>
+ *           &lt;element name="gw_replacement_init" type="{urn:lsbl_topo_service}gw_replacement_init_request"/>
+ *           &lt;element name="gw_replacement_execute" type="{urn:lsbl_topo_service}gw_replacement_execute_request"/>
+ *           &lt;element name="gw_description_publish" type="{urn:lsbl_topo_service}gw_description_publish_request"/>
+ *           &lt;element name="gw_remove" type="{urn:lsbl_topo_service}gw_remove_request"/>
+ *           &lt;element name="device_description_get" type="{urn:lsbl_topo_service}device_description_get_request"/>
+ *           &lt;element name="device_include" type="{urn:lsbl_topo_service}device_include_request"/>
+ *           &lt;element name="device_find" type="{urn:lsbl_topo_service}device_find_request"/>
+ *           &lt;element name="device_autoinclude_set" type="{urn:lsbl_topo_service}device_autoinclude_set_request"/>
+ *           &lt;element name="device_autoinclude_delete" type="{urn:lsbl_topo_service}device_autoinclude_delete_request"/>
+ *           &lt;element name="device_factory_reset" type="{urn:lsbl_topo_service}device_factory_reset"/>
+ *           &lt;element name="device_remove" type="{urn:lsbl_topo_service}device_remove_request"/>
+ *           &lt;element name="device_replacement_init" type="{urn:lsbl_topo_service}device_replacement_init_request"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>

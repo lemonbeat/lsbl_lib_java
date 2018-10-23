@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -29,22 +29,22 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="user_get" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_get_request"/>
- *           &lt;element name="user_password_set" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_password_set_request"/>
- *           &lt;element name="user_login" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_login_request"/>
- *           &lt;element name="user_add" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_add_request"/>
- *           &lt;element name="user_delete" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_delete_request"/>
- *           &lt;element name="user_group_add" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_group_add_request"/>
- *           &lt;element name="user_group_delete" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_group_delete_request"/>
- *           &lt;element name="user_metadata_get" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_metadata_get_request"/>
- *           &lt;element name="user_metadata_set" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_metadata_set_request"/>
- *           &lt;element name="user_metadata_delete" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}user_metadata_delete_request"/>
- *           &lt;element name="group_get" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}group_get_request"/>
- *           &lt;element name="group_add" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}group_add_request"/>
- *           &lt;element name="group_delete" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}group_delete_request"/>
- *           &lt;element name="group_metadata_get" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}group_metadata_get_request"/>
- *           &lt;element name="group_metadata_set" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}group_metadata_set_request"/>
- *           &lt;element name="group_metadata_delete" type="{urn:com.lemonbeat.lsbl.lsbl_user_service}group_metadata_delete_request"/>
+ *           &lt;element name="user_get" type="{urn:lsbl_user_service}user_get_request"/>
+ *           &lt;element name="user_password_set" type="{urn:lsbl_user_service}user_password_set_request"/>
+ *           &lt;element name="user_login" type="{urn:lsbl_user_service}user_login_request"/>
+ *           &lt;element name="user_add" type="{urn:lsbl_user_service}user_add_request"/>
+ *           &lt;element name="user_delete" type="{urn:lsbl_user_service}user_delete_request"/>
+ *           &lt;element name="user_group_add" type="{urn:lsbl_user_service}user_group_add_request"/>
+ *           &lt;element name="user_group_delete" type="{urn:lsbl_user_service}user_group_delete_request"/>
+ *           &lt;element name="user_metadata_get" type="{urn:lsbl_user_service}user_metadata_get_request"/>
+ *           &lt;element name="user_metadata_set" type="{urn:lsbl_user_service}user_metadata_set_request"/>
+ *           &lt;element name="user_metadata_delete" type="{urn:lsbl_user_service}user_metadata_delete_request"/>
+ *           &lt;element name="group_get" type="{urn:lsbl_user_service}group_get_request"/>
+ *           &lt;element name="group_add" type="{urn:lsbl_user_service}group_add_request"/>
+ *           &lt;element name="group_delete" type="{urn:lsbl_user_service}group_delete_request"/>
+ *           &lt;element name="group_metadata_get" type="{urn:lsbl_user_service}group_metadata_get_request"/>
+ *           &lt;element name="group_metadata_set" type="{urn:lsbl_user_service}group_metadata_set_request"/>
+ *           &lt;element name="group_metadata_delete" type="{urn:lsbl_user_service}group_metadata_delete_request"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>

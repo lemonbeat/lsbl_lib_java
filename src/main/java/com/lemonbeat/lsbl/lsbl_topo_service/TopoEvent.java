@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -29,14 +29,15 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="device_included" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_included_event"/>
- *           &lt;element name="device_discovered" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_discovered_event"/>
- *           &lt;element name="device_excluded" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_discovered_event"/>
- *           &lt;element name="device_replacement_initialized" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_replacement_initialized_event"/>
- *           &lt;element name="device_removed" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}device_removed_event"/>
- *           &lt;element name="gateway_included" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gateway_included_event"/>
- *           &lt;element name="gateway_replacement_initialized" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gateway_replacement_initialized_event"/>
- *           &lt;element name="gateway_removed" type="{urn:com.lemonbeat.lsbl.lsbl_topo_service}gateway_removed_event"/>
+ *           &lt;element name="device_included" type="{urn:lsbl_topo_service}device_included_event"/>
+ *           &lt;element name="device_discovered" type="{urn:lsbl_topo_service}device_discovered_event"/>
+ *           &lt;element name="device_excluded" type="{urn:lsbl_topo_service}device_excluded_event"/>
+ *           &lt;element name="device_replacement_initialized" type="{urn:lsbl_topo_service}device_replacement_initialized_event"/>
+ *           &lt;element name="device_removed" type="{urn:lsbl_topo_service}device_removed_event"/>
+ *           &lt;element name="gateway_included" type="{urn:lsbl_topo_service}gateway_included_event"/>
+ *           &lt;element name="gateway_replacement_initialized" type="{urn:lsbl_topo_service}gateway_replacement_initialized_event"/>
+ *           &lt;element name="gateway_replacement_executed" type="{urn:lsbl_topo_service}gateway_replacement_executed_event"/>
+ *           &lt;element name="gateway_removed" type="{urn:lsbl_topo_service}gateway_removed_event"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -55,6 +56,7 @@ import javax.xml.bind.annotation.XmlType;
     "deviceRemoved",
     "gatewayIncluded",
     "gatewayReplacementInitialized",
+    "gatewayReplacementExecuted",
     "gatewayRemoved"
 })
 public class TopoEvent {
@@ -64,7 +66,7 @@ public class TopoEvent {
     @XmlElement(name = "device_discovered")
     protected DeviceDiscoveredEvent deviceDiscovered;
     @XmlElement(name = "device_excluded")
-    protected DeviceDiscoveredEvent deviceExcluded;
+    protected DeviceExcludedEvent deviceExcluded;
     @XmlElement(name = "device_replacement_initialized")
     protected DeviceReplacementInitializedEvent deviceReplacementInitialized;
     @XmlElement(name = "device_removed")
@@ -73,6 +75,8 @@ public class TopoEvent {
     protected GatewayIncludedEvent gatewayIncluded;
     @XmlElement(name = "gateway_replacement_initialized")
     protected GatewayReplacementInitializedEvent gatewayReplacementInitialized;
+    @XmlElement(name = "gateway_replacement_executed")
+    protected GatewayReplacementExecutedEvent gatewayReplacementExecuted;
     @XmlElement(name = "gateway_removed")
     protected GatewayRemovedEvent gatewayRemoved;
 
@@ -129,10 +133,10 @@ public class TopoEvent {
      * 
      * @return
      *     possible object is
-     *     {@link DeviceDiscoveredEvent }
+     *     {@link DeviceExcludedEvent }
      *     
      */
-    public DeviceDiscoveredEvent getDeviceExcluded() {
+    public DeviceExcludedEvent getDeviceExcluded() {
         return deviceExcluded;
     }
 
@@ -141,10 +145,10 @@ public class TopoEvent {
      * 
      * @param value
      *     allowed object is
-     *     {@link DeviceDiscoveredEvent }
+     *     {@link DeviceExcludedEvent }
      *     
      */
-    public void setDeviceExcluded(DeviceDiscoveredEvent value) {
+    public void setDeviceExcluded(DeviceExcludedEvent value) {
         this.deviceExcluded = value;
     }
 
@@ -242,6 +246,30 @@ public class TopoEvent {
      */
     public void setGatewayReplacementInitialized(GatewayReplacementInitializedEvent value) {
         this.gatewayReplacementInitialized = value;
+    }
+
+    /**
+     * Ruft den Wert der gatewayReplacementExecuted-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link GatewayReplacementExecutedEvent }
+     *     
+     */
+    public GatewayReplacementExecutedEvent getGatewayReplacementExecuted() {
+        return gatewayReplacementExecuted;
+    }
+
+    /**
+     * Legt den Wert der gatewayReplacementExecuted-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link GatewayReplacementExecutedEvent }
+     *     
+     */
+    public void setGatewayReplacementExecuted(GatewayReplacementExecutedEvent value) {
+        this.gatewayReplacementExecuted = value;
     }
 
     /**

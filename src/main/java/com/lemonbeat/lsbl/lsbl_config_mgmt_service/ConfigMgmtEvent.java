@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -29,10 +29,10 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="device_config_fetched" type="{urn:com.lemonbeat.lsbl.lsbl_config_mgmt_service}device_config_fetched_event"/>
- *           &lt;element name="device_config_written" type="{urn:com.lemonbeat.lsbl.lsbl_config_mgmt_service}device_config_written_event"/>
- *           &lt;element name="device_config_error" type="{urn:com.lemonbeat.lsbl.lsbl_config_mgmt_service}device_config_error_event"/>
- *           &lt;element name="default_device_config_written" type="{urn:com.lemonbeat.lsbl.lsbl_config_mgmt_service}default_device_config_written_event"/>
+ *           &lt;element name="device_config_fetched" type="{urn:lsbl_config_mgmt_service}device_config_fetched_event"/>
+ *           &lt;element name="device_config_written" type="{urn:lsbl_config_mgmt_service}device_config_written_event"/>
+ *           &lt;element name="device_config_error" type="{urn:lsbl_config_mgmt_service}device_config_error_event"/>
+ *           &lt;element name="default_device_config_written" type="{urn:lsbl_config_mgmt_service}default_device_config_written_event"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.09.20 um 04:07:26 PM CEST 
+// Generiert: 2018.10.23 um 02:25:46 PM CEST 
 //
 
 
@@ -30,9 +30,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="firmware_label" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="firmware_type" type="{urn:com.lemonbeat.lsbl.lsbl_firmware_service}firmware_type"/>
+ *         &lt;element name="firmware_type" type="{urn:lsbl_firmware_service}firmware_type"/>
  *         &lt;element name="firmware_url" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="firmware_uuid" type="{urn:com.lemonbeat.lsbl.lsbl_common_base_types}uuid"/>
+ *         &lt;element name="firmware_uuid" type="{urn:lsbl_common_base_types}uuid"/>
  *         &lt;element name="application_version" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="os_version" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="bootloader_version" type="{http://www.w3.org/2001/XMLSchema}string"/>
