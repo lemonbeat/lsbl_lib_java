@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.10.23 um 02:25:46 PM CEST 
+// Generiert: 2018.11.19 um 04:40:50 PM CET 
 //
 
 
@@ -130,6 +130,22 @@ public class ObjectFactory {
      */
     public DeviceData createDeviceData() {
         return new DeviceData();
+    }
+
+    /**
+     * Create an instance of {@link DeviceFirmwareUpdateStatusGetRequest }
+     * 
+     */
+    public DeviceFirmwareUpdateStatusGetRequest createDeviceFirmwareUpdateStatusGetRequest() {
+        return new DeviceFirmwareUpdateStatusGetRequest();
+    }
+
+    /**
+     * Create an instance of {@link DeviceFirmwareUpdateStatusGetResponse }
+     * 
+     */
+    public DeviceFirmwareUpdateStatusGetResponse createDeviceFirmwareUpdateStatusGetResponse() {
+        return new DeviceFirmwareUpdateStatusGetResponse();
     }
 
     /**

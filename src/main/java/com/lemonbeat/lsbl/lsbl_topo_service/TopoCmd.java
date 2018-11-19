@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.10.23 um 02:25:46 PM CEST 
+// Generiert: 2018.11.19 um 04:40:50 PM CET 
 //
 
 
@@ -42,6 +42,7 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="device_include" type="{urn:lsbl_topo_service}device_include_request"/>
  *           &lt;element name="device_find" type="{urn:lsbl_topo_service}device_find_request"/>
  *           &lt;element name="device_autoinclude_set" type="{urn:lsbl_topo_service}device_autoinclude_set_request"/>
+ *           &lt;element name="device_autoinclude_get" type="{urn:lsbl_topo_service}device_autoinclude_get_request"/>
  *           &lt;element name="device_autoinclude_delete" type="{urn:lsbl_topo_service}device_autoinclude_delete_request"/>
  *           &lt;element name="device_factory_reset" type="{urn:lsbl_topo_service}device_factory_reset"/>
  *           &lt;element name="device_remove" type="{urn:lsbl_topo_service}device_remove_request"/>
@@ -70,6 +71,7 @@ import javax.xml.bind.annotation.XmlType;
     "deviceInclude",
     "deviceFind",
     "deviceAutoincludeSet",
+    "deviceAutoincludeGet",
     "deviceAutoincludeDelete",
     "deviceFactoryReset",
     "deviceRemove",
@@ -103,6 +105,8 @@ public class TopoCmd {
     protected DeviceFindRequest deviceFind;
     @XmlElement(name = "device_autoinclude_set")
     protected DeviceAutoincludeSetRequest deviceAutoincludeSet;
+    @XmlElement(name = "device_autoinclude_get")
+    protected DeviceAutoincludeGetRequest deviceAutoincludeGet;
     @XmlElement(name = "device_autoinclude_delete")
     protected DeviceAutoincludeDeleteRequest deviceAutoincludeDelete;
     @XmlElement(name = "device_factory_reset")
@@ -422,6 +426,30 @@ public class TopoCmd {
      */
     public void setDeviceAutoincludeSet(DeviceAutoincludeSetRequest value) {
         this.deviceAutoincludeSet = value;
+    }
+
+    /**
+     * Ruft den Wert der deviceAutoincludeGet-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DeviceAutoincludeGetRequest }
+     *     
+     */
+    public DeviceAutoincludeGetRequest getDeviceAutoincludeGet() {
+        return deviceAutoincludeGet;
+    }
+
+    /**
+     * Legt den Wert der deviceAutoincludeGet-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DeviceAutoincludeGetRequest }
+     *     
+     */
+    public void setDeviceAutoincludeGet(DeviceAutoincludeGetRequest value) {
+        this.deviceAutoincludeGet = value;
     }
 
     /**

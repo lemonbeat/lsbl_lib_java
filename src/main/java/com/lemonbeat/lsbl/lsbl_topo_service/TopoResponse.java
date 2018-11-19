@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.10.23 um 02:25:46 PM CEST 
+// Generiert: 2018.11.19 um 04:40:50 PM CET 
 //
 
 
@@ -35,6 +35,7 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="gw_network_key_get" type="{urn:lsbl_topo_service}gw_network_key_get_response"/>
  *           &lt;element name="device_description_get" type="{urn:lsbl_topo_service}device_description_get_response"/>
  *           &lt;element name="device_find" type="{urn:lsbl_topo_service}device_find_response"/>
+ *           &lt;element name="device_autoinclude_report" type="{urn:lsbl_topo_service}device_autoinclude_report"/>
  *           &lt;element name="device_description_report" type="{urn:lsbl_topo_service}device_description_report_response"/>
  *         &lt;/choice>
  *       &lt;/sequence>
@@ -53,6 +54,7 @@ import javax.xml.bind.annotation.XmlType;
     "gwNetworkKeyGet",
     "deviceDescriptionGet",
     "deviceFind",
+    "deviceAutoincludeReport",
     "deviceDescriptionReport"
 })
 public class TopoResponse {
@@ -69,6 +71,8 @@ public class TopoResponse {
     protected DeviceDescriptionGetResponse deviceDescriptionGet;
     @XmlElement(name = "device_find")
     protected DeviceFindResponse deviceFind;
+    @XmlElement(name = "device_autoinclude_report")
+    protected DeviceAutoincludeReport deviceAutoincludeReport;
     @XmlElement(name = "device_description_report")
     protected DeviceDescriptionReportResponse deviceDescriptionReport;
 
@@ -214,6 +218,30 @@ public class TopoResponse {
      */
     public void setDeviceFind(DeviceFindResponse value) {
         this.deviceFind = value;
+    }
+
+    /**
+     * Ruft den Wert der deviceAutoincludeReport-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DeviceAutoincludeReport }
+     *     
+     */
+    public DeviceAutoincludeReport getDeviceAutoincludeReport() {
+        return deviceAutoincludeReport;
+    }
+
+    /**
+     * Legt den Wert der deviceAutoincludeReport-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DeviceAutoincludeReport }
+     *     
+     */
+    public void setDeviceAutoincludeReport(DeviceAutoincludeReport value) {
+        this.deviceAutoincludeReport = value;
     }
 
     /**

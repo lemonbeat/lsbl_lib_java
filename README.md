@@ -2,7 +2,7 @@
 
 Java library for writing and reading LsBL XMLs using Java.
 
-Current Version: 1.0.0
+Current Version: 1.4.0
 
 ## Getting started
 
@@ -35,7 +35,7 @@ Lsbl lsbl = LsBL.parse(lsblXML)
 rm -Rf lsbl_xsd
 git clone git@gitlab.lemonbeat.com:sw/mgmt/common/lsbl_xsd.git
 cd lsbl_xsd
-git checkout tags/1.0.0
+git checkout tags/1.4.0
 
 # On windows
 xjc.exe -d ..\src\main\java xsd\lsbl.xsd
