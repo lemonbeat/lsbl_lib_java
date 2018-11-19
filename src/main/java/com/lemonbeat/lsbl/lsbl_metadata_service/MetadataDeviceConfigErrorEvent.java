@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.10.23 um 02:25:46 PM CEST 
+// Generiert: 2018.11.19 um 04:40:50 PM CET 
 //
 
 
@@ -11,7 +11,6 @@ package com.lemonbeat.lsbl.lsbl_metadata_service;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -32,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="uuid" type="{urn:lsbl_common_base_types}uuid"/>
  *         &lt;element name="device_sgtin" type="{urn:lsbl_common_base_types}sgtin_96"/>
  *         &lt;element name="gw_sgtin" type="{urn:lsbl_common_base_types}sgtin_96"/>
- *         &lt;element name="error_code" type="{http://www.w3.org/2001/XMLSchema}unsignedInt"/>
+ *         &lt;element name="error_code" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="action" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="message" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
@@ -60,9 +59,8 @@ public class MetadataDeviceConfigErrorEvent {
     protected String deviceSgtin;
     @XmlElement(name = "gw_sgtin", required = true)
     protected String gwSgtin;
-    @XmlElement(name = "error_code")
-    @XmlSchemaType(name = "unsignedInt")
-    protected long errorCode;
+    @XmlElement(name = "error_code", required = true)
+    protected String errorCode;
     @XmlElement(required = true)
     protected String action;
     @XmlElement(required = true)
@@ -143,16 +141,24 @@ public class MetadataDeviceConfigErrorEvent {
     /**
      * Ruft den Wert der errorCode-Eigenschaft ab.
      * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public long getErrorCode() {
+    public String getErrorCode() {
         return errorCode;
     }
 
     /**
      * Legt den Wert der errorCode-Eigenschaft fest.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public void setErrorCode(long value) {
+    public void setErrorCode(String value) {
         this.errorCode = value;
     }
 

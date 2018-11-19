@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.10.23 um 02:25:46 PM CEST 
+// Generiert: 2018.11.19 um 04:40:50 PM CET 
 //
 
 
@@ -31,6 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;choice>
  *           &lt;element name="device_firmware_rule_get" type="{urn:lsbl_firmware_service}device_firmware_rule_get_response"/>
  *           &lt;element name="device_firmware_rule_set" type="{urn:lsbl_firmware_service}device_firmware_rule_set_response"/>
+ *           &lt;element name="device_firmware_update_status_get" type="{urn:lsbl_firmware_service}device_firmware_update_status_get_response"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -43,7 +44,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "firmware_response", propOrder = {
     "deviceFirmwareRuleGet",
-    "deviceFirmwareRuleSet"
+    "deviceFirmwareRuleSet",
+    "deviceFirmwareUpdateStatusGet"
 })
 public class FirmwareResponse {
 
@@ -51,6 +53,8 @@ public class FirmwareResponse {
     protected DeviceFirmwareRuleGetResponse deviceFirmwareRuleGet;
     @XmlElement(name = "device_firmware_rule_set")
     protected DeviceFirmwareRuleSetResponse deviceFirmwareRuleSet;
+    @XmlElement(name = "device_firmware_update_status_get")
+    protected DeviceFirmwareUpdateStatusGetResponse deviceFirmwareUpdateStatusGet;
 
     /**
      * Ruft den Wert der deviceFirmwareRuleGet-Eigenschaft ab.
@@ -98,6 +102,30 @@ public class FirmwareResponse {
      */
     public void setDeviceFirmwareRuleSet(DeviceFirmwareRuleSetResponse value) {
         this.deviceFirmwareRuleSet = value;
+    }
+
+    /**
+     * Ruft den Wert der deviceFirmwareUpdateStatusGet-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DeviceFirmwareUpdateStatusGetResponse }
+     *     
+     */
+    public DeviceFirmwareUpdateStatusGetResponse getDeviceFirmwareUpdateStatusGet() {
+        return deviceFirmwareUpdateStatusGet;
+    }
+
+    /**
+     * Legt den Wert der deviceFirmwareUpdateStatusGet-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DeviceFirmwareUpdateStatusGetResponse }
+     *     
+     */
+    public void setDeviceFirmwareUpdateStatusGet(DeviceFirmwareUpdateStatusGetResponse value) {
+        this.deviceFirmwareUpdateStatusGet = value;
     }
 
 }

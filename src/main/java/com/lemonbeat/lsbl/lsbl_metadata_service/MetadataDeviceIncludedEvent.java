@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2018.10.23 um 02:25:46 PM CEST 
+// Generiert: 2018.11.19 um 04:40:50 PM CET 
 //
 
 
@@ -33,6 +33,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="gw_sgtin" type="{urn:lsbl_common_base_types}sgtin_96"/>
  *         &lt;element name="metadata_report" type="{urn:lsbl_metadata_service}metadata_report"/>
  *         &lt;element name="lsdl" type="{urn:lsbl_common_base_types}lsdl"/>
+ *         &lt;element name="value_description_report" type="{urn:lsbl_common_base_types}lsdl"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -47,7 +48,8 @@ import javax.xml.bind.annotation.XmlType;
     "deviceSgtin",
     "gwSgtin",
     "metadataReport",
-    "lsdl"
+    "lsdl",
+    "valueDescriptionReport"
 })
 public class MetadataDeviceIncludedEvent {
 
@@ -61,6 +63,8 @@ public class MetadataDeviceIncludedEvent {
     protected MetadataReport metadataReport;
     @XmlElement(required = true)
     protected String lsdl;
+    @XmlElement(name = "value_description_report", required = true)
+    protected String valueDescriptionReport;
 
     /**
      * Ruft den Wert der uuid-Eigenschaft ab.
@@ -180,6 +184,30 @@ public class MetadataDeviceIncludedEvent {
      */
     public void setLsdl(String value) {
         this.lsdl = value;
+    }
+
+    /**
+     * Ruft den Wert der valueDescriptionReport-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getValueDescriptionReport() {
+        return valueDescriptionReport;
+    }
+
+    /**
+     * Legt den Wert der valueDescriptionReport-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setValueDescriptionReport(String value) {
+        this.valueDescriptionReport = value;
     }
 
 }
