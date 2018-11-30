@@ -2,9 +2,16 @@
 
 Java library for writing and reading LsBL XMLs using Java.
 
-Current Version: 1.4.0
-
 ## Getting started
+
+To generate a jar file from a tagged lsbl_xsd version you need to run the build script.
+
+```bash
+# Build the latest master
+./build.sh
+# Build a tagged version
+./build.sh 1.4.0
+``` 
 
 ### Create a device_description_get command
 
@@ -27,22 +34,4 @@ System.out.println(LsBL.write(lsbl));
 Lsbl lsbl = LsBL.parse(lsblXML)
 ```
 
-## Regenerate classes using JAXB
 
-```bash
-# Delete everything in com.lemonbeat.lsbl except for LsBL.java
-
-rm -Rf lsbl_xsd
-git clone git@gitlab.lemonbeat.com:sw/mgmt/common/lsbl_xsd.git
-cd lsbl_xsd
-git checkout tags/1.4.0
-
-# On windows
-xjc.exe -d ..\src\main\java xsd\lsbl.xsd
-# On linux
-xjc -d ../src/main/java xsd/lsbl.xsd
-```
-
-Move all generated classes to com.lemonbeat.lsbl package using IntelliJs refactoring feature.
-
-Mark all generated files, and choose "Refactor" -> "Move" -> "Move XX Packages to another package"
