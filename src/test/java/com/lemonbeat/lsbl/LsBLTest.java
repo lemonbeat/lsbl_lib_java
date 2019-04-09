@@ -1,6 +1,7 @@
 package com.lemonbeat.lsbl;
 
 import com.lemonbeat.lsbl.lsbl.Lsbl;
+import com.lemonbeat.lsbl.lsbl.MessageType;
 import com.lemonbeat.lsbl.lsbl.ObjectFactory;
 import com.lemonbeat.lsbl.lsbl_topo_service.DeviceDescriptionGetRequest;
 import com.lemonbeat.lsbl.lsbl_topo_service.TopoCmd;
@@ -32,6 +33,29 @@ public class LsBLTest {
         System.out.println(LsBL.write(lsbl));
     }
 
+    @Test
+    public void testIsAck(){
+        Lsbl ack = LsBL.create("SRC", "TARGET", 24, MessageType.LSBL_APP_ACK);
+        Lsbl request = LsBL.create("SRC", "TARGET", 24, MessageType.LSBL_REQUEST);
+        assert(LsBL.isAck(ack));
+        assertFalse(LsBL.isAck(request));
+    }
+
+    @Test
+    public void testIsNack(){
+        Lsbl nack = LsBL.create("SRC", "TARGET", 24, MessageType.LSBL_APP_NACK);
+        Lsbl request = LsBL.create("SRC", "TARGET", 24, MessageType.LSBL_REQUEST);
+        assert(LsBL.isNack(nack));
+        assertFalse(LsBL.isNack(request));
+    }
+
+    @Test
+    public void testIsResponse(){
+        Lsbl response = LsBL.create("SRC", "TARGET", 24, MessageType.LSBL_RESPONSE);
+        Lsbl request = LsBL.create("SRC", "TARGET", 24, MessageType.LSBL_REQUEST);
+        assert(LsBL.isResponse(response));
+        assertFalse(LsBL.isResponse(request));
+    }
 
     @Test
     public void testCommon() {
