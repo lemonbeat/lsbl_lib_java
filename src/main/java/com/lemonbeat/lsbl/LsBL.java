@@ -15,6 +15,8 @@ public class LsBL {
 
     public static final String VERSION = "master";
 
+    private static JAXBContext jaxbContext;
+
     public static Lsbl create(String src, String target, long seq){
         return create(src, target, seq, MessageType.LSBL_REQUEST);
     }
@@ -47,8 +49,10 @@ public class LsBL {
 
     public static Lsbl parse(String xml) throws JAXBException {
         ByteArrayInputStream xmlContentBytes = new ByteArrayInputStream(xml.getBytes());
-        JAXBContext context = JAXBContext.newInstance(Lsbl.class);
-        Unmarshaller unmarshaller = context.createUnmarshaller();
+        if(jaxbContext == null){
+            jaxbContext = JAXBContext.newInstance(Lsbl.class);
+        }
+        Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
         return Lsbl.class.cast(unmarshaller.unmarshal(xmlContentBytes));
     }
 
