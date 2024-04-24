@@ -5,18 +5,20 @@ plugins {
 }
 
 group 'com.lemonbeat'
-version 'master'
+version = rootProject.file('lsbl_xsd/VERSION').text.trim()
 
+/*
 jar {
     version = null
 }
-
-sourceCompatibility = 1.8
+*/
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:2.3.3'
+    implementation 'com.sun.xml.bind:jaxb-impl:2.3.3'
 }
